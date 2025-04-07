@@ -5,10 +5,10 @@ import Main from './Components/Main/Main';
 
 function App() {
   return (
-    <app className="app">
+    <main className="app">
     <Header/>
     <Main/>
-    </app>
+    </main>
   );
 }
 

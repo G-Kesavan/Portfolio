@@ -13,5 +13,10 @@
 }
 .navbar ul{
     display: flex;
-    gap :2rem;
+    gap :1rem;
+}
+.navbar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
