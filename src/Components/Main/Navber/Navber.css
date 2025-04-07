@@ -1,0 +1,17 @@
+.navbar{
+    height: 8%;
+    width: 55%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -5%;
+    border-radius: 3rem;
+    background-color: rgba(114, 112, 112, 0.849);
+    filter: blur(0.6px);
+    box-shadow: 0px 0px 2px;
+}
+.navbar ul{
+    display: flex;
+    gap :2rem;
+}
