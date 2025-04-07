@@ -5,10 +5,10 @@
 
   height: 100vh;
   width: 100%;
-  background: url(./Image/background_2.jpg);
+  background-image: url(./Image/background_2.jpg);
   background-position: center;
-  background-size: cover;
-  filter: blur(0.5px);
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 li:hover{
   transition: 0.4s;
