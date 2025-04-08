@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
 
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: url(./Image/background_2.jpg);
-  background-position: center;
+  background-position:center;
   background-size:cover;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
 }
 li:hover{
   transition: 0.4s;

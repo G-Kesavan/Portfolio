@@ -1,13 +1,13 @@
 import React from 'react'
 import './Main.css'
-import Sidebar from './Sidebar/Sidebar'
-import Content from '.././MainBox/Content'
+import Sidebar from '../Sidebar/Sidebar'
+import MainBox from '../MainBox/MainBox'
 
 const Main = () => {
   return (
-    <main>
+    <main className='main'>
         <Sidebar/>
-        <Content/>
+        <MainBox/>
     </main>
   )
 }

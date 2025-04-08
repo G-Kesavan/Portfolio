@@ -1,7 +1,7 @@
-main{
-    height: 80%;
+.main{
+    height: 80vh;
     width: 80%;
     background-color: transparent;
     display: flex;
-    display: flex;
+    margin-bottom: 10vh;
 }
