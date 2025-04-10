@@ -1,7 +1,27 @@
 .home{
-    height: 80%;
+    height: 82%;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-flow: column wrap;
+    position: relative;
+}
+.message{
+    height: 60%;
+    width: 50%;
+}
+.photo{
+    height: 60%;
+    width: 30%;
+}
+.example{
+    height: 100%;
+    width: 20%;
+}
+.skills{
+    height: 40%;
+    width: 50%;
+}
+.language{
+    height: 40%;
+    width: 30%;   
 }

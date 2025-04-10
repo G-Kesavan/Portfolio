@@ -6,11 +6,11 @@ import { FaPhone } from "react-icons/fa6";
 import { SiBiome } from "react-icons/si";
 
 
-const Sidebar = () => {
+const Sidebar = ({SetValue}) => {
   return (
     <nav className='sidebar'>
       <ul>
-        <li><FaHome /></li>
+        <li onClick={()=>SetValue('home')}><FaHome /></li>
         <li><IoMdContact /></li>
         <li><FaPhone /></li>
         <li><SiBiome /></li>
