@@ -9,10 +9,10 @@ const Navber = ({SetValue}) => {
   return (
     <nav className='navbar'>
       <ul>
-        <li onClick={()=>SetValue('project')}><FaProjectDiagram /> Project</li>
-        <li onClick={()=>SetValue('skill')}><GiSkills /> Skills</li>
-        <li onClick={()=>SetValue('experience')}><GiGiftOfKnowledge /> Experience</li>
-        <li onClick={()=>SetValue('certificate')}><PiCertificateBold /> Certificate</li>
+        <li onClick={()=>SetValue('project')}><FaProjectDiagram />&nbsp;Project</li>
+        <li onClick={()=>SetValue('skill')}><GiSkills />&nbsp;Skills</li>
+        <li onClick={()=>SetValue('experience')}><GiGiftOfKnowledge />&nbsp;Experience</li>
+        <li onClick={()=>SetValue('certificate')}><PiCertificateBold />&nbsp;Certificate</li>
       </ul>
     </nav>
   )

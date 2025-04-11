@@ -11,9 +11,9 @@ const Sidebar = ({SetValue}) => {
     <nav className='sidebar'>
       <ul>
         <li onClick={()=>SetValue('home')}><FaHome /></li>
-        <li><IoMdContact /></li>
-        <li><FaPhone /></li>
-        <li><SiBiome /></li>
+        <li onClick={()=>SetValue('about')}><IoMdContact /></li>
+        <li onClick={()=>SetValue('contact')}><FaPhone /></li>
+        <li onClick={()=>SetValue('biodata')}><SiBiome /></li>
       </ul>
     </nav>
   )
