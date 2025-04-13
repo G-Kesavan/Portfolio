@@ -12,6 +12,6 @@
 }
 li:hover{
   transition: 0.4s;
-  background-color: rgba(198, 193, 193, 0.741);
+  background-color: #c6c1c1bd;
   border-radius: 1rem;
 }
