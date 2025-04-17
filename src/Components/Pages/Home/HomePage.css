@@ -1,27 +1,41 @@
-.home{
-    height: 82%;
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    position: relative;
+.HomePage{
+    height: 80%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+
 }
 .message{
-    height: 60%;
-    width: 50%;
+    background-color: rgba(36, 35, 35, 0.849);
 }
-.photo{
-    height: 60%;
-    width: 30%;
-}
-.example{
+.photo {
+    background-color: rgba(36, 35, 35, 0.849);
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+.photo img {
+    width: auto;
     height: 100%;
-    width: 20%;
+    object-fit:contain;
+    border-radius: 20px; 
+  }
+  
+.example{
+    background-color: rgba(36, 35, 35, 0.849);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
 }
 .skills{
-    height: 40%;
-    width: 50%;
+    background-color: rgba(36, 35, 35, 0.849);
 }
 .language{
-    height: 40%;
-    width: 30%;   
+    background-color: rgba(36, 35, 35, 0.849);
 }

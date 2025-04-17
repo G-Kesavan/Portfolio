@@ -1,14 +1,14 @@
 .Skill-Section{
     height: 80%;
-    width: 93%;
-    display: flex;
-    gap: 2%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr;
+    grid-template-rows: 100% 100%;
+    gap:min(20px);
 }
 .AboutSkill{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 89%;
     align-items: center;
     justify-content: space-around;
     border-radius: 30px;
@@ -17,20 +17,17 @@
     text-align: center;
 }
 .MySkills{
-    width: 60%;
-    height: 100%;
+
 }
 .MySkills ul{
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-    overflow:auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    gap: 20px;
 }
 .MySkills ul li{
-    width: 30%;
-    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
