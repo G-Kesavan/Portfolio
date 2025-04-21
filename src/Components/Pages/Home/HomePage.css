@@ -54,19 +54,27 @@ justify-content: center;
     border-radius: 20px;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 50% 50%;
-    height: 100%;
-    width: 100%;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    gap: 5px;
 }
 .languages{
     display: flex;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    overflow: hidden;
 }
 .bar{
-    height: 200px;
-    width: 200px;
+    height: 95%;
+    width: auto;
+    display: flex;
+    overflow: hidden;
 }
+.languages p{
+    display: flex;
+    height: 100%;
+    min-width: 50%;
+    max-width: auto;
+    align-items: center;
+    justify-content:center;
+    }
