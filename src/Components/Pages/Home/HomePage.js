@@ -5,14 +5,9 @@ import Photo from '../../../Image/MyPhoto.png'
 const HomePage = () => {
   return (
     <section className='HomePage'>
-      <div className='message'>
-          hi i am kesavan
-          <br/>
-          Web developer
-      </div>
-
-      <div className='photo'>
-        <img src={Photo}/>
+      <div className='profile'>
+          <p>Hi I am Kesavan<br/>web developer</p>
+          <img src={Photo}/>
       </div>
 
       <div className='example'>
