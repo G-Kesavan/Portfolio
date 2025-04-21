@@ -51,4 +51,22 @@ justify-content: center;
 }
 .language{
     background-color: rgba(36, 35, 35, 0.849);
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+    width: 100%;
+}
+.languages{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.bar{
+    height: 200px;
+    width: 200px;
 }
