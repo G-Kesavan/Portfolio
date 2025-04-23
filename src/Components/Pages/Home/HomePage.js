@@ -11,7 +11,7 @@ const HomePage = () => {
     <section className='HomePage'>
       <div className='profile'>
           <p>Hi I am Kesavan<br/>web developer</p>
-          <img src={Photo} alt='photo'/>
+          <img src={Photo} alt='profile'/>
       </div>
 
       <div className='example'>

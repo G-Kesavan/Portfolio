@@ -1,20 +1,33 @@
 .certification{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-    grid-template-rows: 100%;
-    height: 90%;
-    width: 100%;
+    height: 80%;
+    width: 90%;
     gap: 10px;
-    overflow:scroll;
 }
 .certificate{
-    display: flex;
-    width: 20%;
-    height: 100%;
+    width: 100%;
+    height: 59vh;
     background-color: black;
+    overflow: hidden;
+    display: grid;
+    border-radius: 20px;
+    object-fit: contain;
 }
 .certificate img{
-    height: 100px;
-    width: 100px;
+    height: 40%;
+    width: 150px;
     overflow: hidden;
+}
+.datials{
+    height: 50%;
+    width: 100%;
+}
+.slick-slide{
+    margin: 10px;
+    overflow: hidden;
+}
+.slick-slider{
+    height: 95%;
+}
+.slick-list{
+    height: 100%;
 }
