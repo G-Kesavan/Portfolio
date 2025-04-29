@@ -1,33 +1,43 @@
-.certification{
+.embla {
+    overflow: hidden;
     height: 80%;
-    width: 90%;
-    gap: 10px;
-}
-.certificate{
+    width: 95%;
+  }
+  .certificates {
+    display: flex;
+    height: 100%;
     width: 100%;
-    height: 59vh;
-    background-color: black;
-    overflow: hidden;
-    display: grid;
-    border-radius: 20px;
     object-fit: contain;
-}
-.certificate img{
-    height: 40%;
-    width: 150px;
-    overflow: hidden;
-}
-.datials{
+    gap: 22px;
+  }
+  .certificate {
+    flex: 0 0 29%;
+    min-width: 0;
+    background-color:rgba(36, 35, 35, 0.849) ;
+    border-radius: 20px;
+    padding: 10px;
+
+  }
+  .embla img{
+    height: 50%;
+    width:100%;
+    border-radius: 15px;
+  }
+  .datials{
     height: 50%;
     width: 100%;
-}
-.slick-slide{
-    margin: 10px;
-    overflow: hidden;
-}
-.slick-slider{
-    height: 95%;
-}
-.slick-list{
-    height: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .datials h2{
+    font-size: clamp(10px,2.5vw,25px);
+  }
+  .datials h3{
+    font-size: 20px;
+    padding: 10px 0px 0px 0px;
+  }
+  .datials p{
+    font-size: 16px;
+    padding: 10px 0px 0px 0px;
+  }

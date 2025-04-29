@@ -14,8 +14,8 @@ function App() {
     <div className="app">
       <Header/>
       <Main
-      value={value}
-      SetValue={SetValue}
+        value={value}
+        SetValue={SetValue}
       />
       <Footer/>
     </div>

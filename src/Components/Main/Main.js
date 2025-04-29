@@ -1,18 +1,21 @@
 import React from 'react'
 import './Main.css'
 import Sidebar from '../Sidebar/Sidebar'
-import MainBox from '../MainBox/MainBox'
+import Content from '../Content/Content'
+import Navber from '../Navber/Navber'
 
 const Main = ({SetValue,value}) => {
   return (
-    <main className='main'>
+    <main>
         <Sidebar 
           SetValue={SetValue}       
         />
-        <MainBox
+        <Content
           SetValue={SetValue}
           value={value}
         />
+        <Navber
+        SetValue={SetValue}/>
     </main>
   )
 }

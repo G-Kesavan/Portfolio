@@ -2,8 +2,8 @@ import React from 'react'
 
 const Heading = () => {
   return (
-    <section className='head-section'>
-        <div className='heading'>
+    <section className='heading'>
+        <div className='message'>
           <h5>Hi i am</h5>
           <h2>Kesava Perumal G</h2>
         </div>

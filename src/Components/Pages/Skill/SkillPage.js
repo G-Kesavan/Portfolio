@@ -47,7 +47,7 @@ const Skill = () => {
   const { percentage, description } = skillDetails[currentSkill];
 
   return (
-    <section className='Skill-Section'>
+    <section className='SkillPage'>
       <div className='AboutSkill'>
         <h1>{currentSkill}</h1>
         <CircularProgressBar

@@ -1,0 +1,27 @@
+.box{
+    height: 80%;
+    width: 95%;
+    background-color: green;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+.btn1{
+    position: absolute;
+    left: 101%;
+    top: 50%;
+}
+.btn2{
+    position: absolute;
+    right: 101%;
+    top: 50%;
+}
+.content{
+    height: 90%;
+    width: 30%;
+    background-color: black;
+    border-radius: 20px;
+    transition:5s;
+}

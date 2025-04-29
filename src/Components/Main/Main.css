@@ -1,7 +1,9 @@
-.main{
+main{
     height: 80vh;
-    width: 80%;
+    width: 100%;
     background-color: transparent;
     display: flex;
-    margin-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }

@@ -1,7 +1,6 @@
 import React from 'react'
-import './MainBox.css'
-import Navber from '../Navber/Navber'
-import HeadPart from './HeadPart'
+import './Content.css'
+import Heading from './Heading'
 import HomePage from '../Pages/Home/HomePage'
 import AboutPage from '../Pages/About/AboutPage'
 import ContactPage from '../Pages/Contact/ContactPage'
@@ -15,8 +14,8 @@ import CertificatePage from '../Pages/Certificate/CertificatePage'
 const Content = ({value,SetValue}) => {
 
   return (
-    <section className='MainBox'>
-        <HeadPart/>
+    <article className='Content'>
+        <Heading/>
         {value==='home' && <HomePage/>}
         {value==='about' && <AboutPage/>}
         {value==='contact' && <ContactPage/>}
@@ -25,9 +24,7 @@ const Content = ({value,SetValue}) => {
         {value==='skill' && <SkillPage/>}
         {value==='experience' && <ExperiencePage/>}
         {value==='certificate' && <CertificatePage/>}
-        <Navber
-        SetValue={SetValue}/>
-    </section>
+    </article>
   )
 }
 

@@ -9,6 +9,7 @@
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
+  position: relative;
 }
 li:hover{
   transition: 0.4s;

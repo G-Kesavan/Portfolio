@@ -1,63 +1,67 @@
 import React from 'react'
-import certificate_1 from '../../../Image/background.jpg'
+import certificate_1 from '../../../Image/Web Development.jpg'
+import certificate_3 from '../../../Image/AI Foundations Associate-1.jpg'
+import certificate_4 from '../../../Image/Foundations Associate-1.jpg'
+import certificate_5 from '../../../Image/Software Testing-1.jpg'
+import certificate_2 from '../../../Image/WORKSHOP PARTICIPATION CERTIFICATE-1.jpg'
 import './Certificate.css'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "@ant-design/react-slick";
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 const Certificate = () => {
-
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1
-  };
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
   
   const certificates=[
     {
+      key:1,
+      name:'CodSoft Intership Web Development',
+      provider:'CodSoft',
       image:certificate_1,
       detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
     },
     {
-      image:certificate_1,
+      key:2,
+      name:'WORKSHOP PARTICIPATION',
+      provider:'GUHA',
+      image:certificate_2,
       detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
     },
     {
-      image:certificate_1,
+      key:3,
+      name:'AI Foundations Associate',
+      provider:'Oracle',
+      image:certificate_3,
       detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
     },
     {
-      image:certificate_1,
+      key:4,
+      name:'Foundations Associate',
+      provider:'Oracle',
+      image:certificate_4,
       detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
     },
     {
-      image:certificate_1,
-      detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
-    },
-    {
-      image:certificate_1,
-      detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
-    },
-    {
-      image:certificate_1,
+      key:5,
+      name:'Software Testing',
+      provider:'Open Monitor',
+      image:certificate_5,
       detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
     }
   ];
   return (
-    <section className='certification'>
-      <Slider {...settings}>
+    <section className="CertificatePage embla" ref={emblaRef}>
+    <div className="certificates">
       {certificates.map((certificate)=>(
-        <div className='certificate'>
-          <img src={certificate.image}/>
+        <div className="certificate" key={certificate.key}>
+          <img src={certificate.image} alt='certificate'/>
           <div className='datials'>
-          <p>name</p>
+          <h2>{certificate.name}</h2>
+          <h3>Provider :{certificate.provider}</h3>
           <p>{certificate.detail}</p>
           </div>
         </div>
       ))}
-      </Slider>
+    </div>
     </section>
   )
 }
