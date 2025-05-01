@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/react-slick": "^1.1.2",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
@@ -16,6 +17,7 @@
     "react-percentage-bar": "^1.2.5",
     "react-redux": "^8.0.1",
     "react-scripts": "5.0.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

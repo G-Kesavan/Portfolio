@@ -7,37 +7,50 @@
     display: flex;
     height: 100%;
     width: 100%;
-    object-fit: contain;
-    gap: 22px;
   }
   .certificate {
     flex: 0 0 29%;
-    min-width: 0;
     background-color:rgba(36, 35, 35, 0.849) ;
     border-radius: 20px;
-    padding: 10px;
-
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
   .embla img{
     height: 50%;
     width:100%;
     border-radius: 15px;
   }
+  .emba img:hover{
+    height: 400px;
+    width: 800px;
+  }
   .datials{
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    gap: 10px;
   }
   .datials h2{
-    font-size: clamp(10px,2.5vw,25px);
-  }
-  .datials h3{
     font-size: 20px;
-    padding: 10px 0px 0px 0px;
   }
   .datials p{
     font-size: 16px;
-    padding: 10px 0px 0px 0px;
+    text-align:justify;
+    margin: 5px;
+  }
+  .closeBtn{
+    position: absolute;
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+    color:white;
+    border-radius: 50%;
+    background-color: black;
+    border: solid 2px white;
+    display: none;
   }

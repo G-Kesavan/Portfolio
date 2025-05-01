@@ -15,49 +15,86 @@ const Certificate = () => {
     {
       key:1,
       name:'CodSoft Intership Web Development',
-      provider:'CodSoft',
       image:certificate_1,
-      detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
+      detail:'Completed virtual web development internship at CodSoft, gaining hands-on experience in ReactJS, HTML, CSS, JavaScript, and real-world frontend development.'
     },
     {
       key:2,
       name:'WORKSHOP PARTICIPATION',
-      provider:'GUHA',
       image:certificate_2,
-      detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
+      detail:'Attended AI-enhanced web development workshop by Guha Industrial Solutions, learning to integrate AI, Web3, blockchain, and emerging technologies to build modern, intelligent, and decentralized websites.'
     },
     {
       key:3,
       name:'AI Foundations Associate',
-      provider:'Oracle',
       image:certificate_3,
-      detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
+      detail:'Achieved AI Foundations Associate certification from Oracle, gaining foundational knowledge in artificial intelligence concepts, machine learning algorithms, and real-world AI applications for modern business solutions.'
     },
     {
       key:4,
       name:'Foundations Associate',
-      provider:'Oracle',
       image:certificate_4,
-      detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
+      detail:'Achieved Oracle Foundations Associate certification, gaining a comprehensive understanding of core concepts, tools, and practices essential for building a strong foundation in technology and business solutions.'
     },
     {
       key:5,
       name:'Software Testing',
-      provider:'Open Monitor',
       image:certificate_5,
-      detail:'it provide codsoft IT tech enterstry of oracle cloud enterstry of managment of kolkatha'
+      detail:'Completed a basic software testing course through Naan Mudhalvan by OpenMentor, gaining introductory knowledge of software quality concepts and fundamental testing principles used in development.'
     }
   ];
+  const openImage = (key) => {
+    const container = document.getElementById(key);
+    if (!container) return;
+  
+    const img = container.querySelector('img');
+    const details = container.getElementsByClassName('datials')[0];
+    const closeBtn = container.getElementsByClassName('closeBtn')[0];
+  
+    if (img) {
+      img.style.height = '100%';
+      img.style.width = 'auto';
+    }
+  
+    if (details) {
+      details.style.display = 'none';
+    }
+
+    if (closeBtn) {
+      closeBtn.style.display = 'block';
+    }
+  };
+  const closeImage = (key) => {
+    const container = document.getElementById(key);
+    if (!container) return;
+  
+    const img = container.querySelector('img');
+    const details = container.getElementsByClassName('datials')[0];
+    const closeBtn = container.getElementsByClassName('closeBtn')[0];
+  
+    if (img) {
+      img.style.height = '50%';
+      img.style.width = '100%';
+    }
+  
+    if (details) {
+      details.style.display = 'flex';
+    }
+    if (closeBtn) {
+      closeBtn.style.display = 'none';
+    }
+  };
+
   return (
     <section className="CertificatePage embla" ref={emblaRef}>
     <div className="certificates">
       {certificates.map((certificate)=>(
-        <div className="certificate" key={certificate.key}>
-          <img src={certificate.image} alt='certificate'/>
+        <div className="certificate" key={certificate.key} id={certificate.key}>
+          <button className='closeBtn'onClick={()=>closeImage(certificate.key)}>X</button>
+          <img src={certificate.image} alt='certificate' onClick={()=>openImage(certificate.key)}/>
           <div className='datials'>
-          <h2>{certificate.name}</h2>
-          <h3>Provider :{certificate.provider}</h3>
-          <p>{certificate.detail}</p>
+            <h2>{certificate.name}</h2>
+            <p>{certificate.detail}</p>
           </div>
         </div>
       ))}
