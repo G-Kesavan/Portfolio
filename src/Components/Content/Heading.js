@@ -1,15 +1,27 @@
 import React from 'react'
+import resume from '../../Image/resum.pdf'
 
 const Heading = () => {
+
+  const onButtonClick = () => {
+    const pdfUrl = "../resum.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
   return (
     <section className='heading'>
         <div className='message'>
-          <h5>Hi i am</h5>
-          <h2>Kesava Perumal G</h2>
+          <h2>Welcome to my portfolio</h2>
+          <h5>Excited to share my journey...</h5>
         </div>
         <div className='resume'>
           <ul>
-            <li>Resume</li>
+            <li onClick={onButtonClick}>Resume</li>
             <li>CV</li>
           </ul>
         </div>

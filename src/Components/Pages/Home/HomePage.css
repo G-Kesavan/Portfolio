@@ -17,27 +17,36 @@
     grid-column-start: 1;
     grid-column-end: 3;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 20px;   
+    position: relative;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+    min-width: auto;
+    max-width: 58%;
+    padding: 0 0 0 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: start;
     
 }
-
-.profile p{
-display: flex;
-height: 100%;
-min-width: 50%;
-max-width: auto;
-align-items: center;
-justify-content: center;
+.about p{
+    font-size: 17.5px;
 }
 
 .profile img{
-    height: 90%;
+    height: auto;
+    max-height: 91%;
     width: auto;
-    border-radius: 30px;
-    object-fit:contain;
+    border-radius:20px;
     overflow: hidden;
-    display: flex;
-    padding: 15px;
+    display:flex;
+    object-position: center;
+    object-fit: contain;
+    margin: 0 2% 0 0;
 }
   
 .example{
@@ -45,23 +54,33 @@ justify-content: center;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 3;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
 }
-.skills{
-    background-color: rgba(36, 35, 35, 0.849);
+.language hr{
+    width: 95%;
+    height: 0.1px;
+    margin: 4px;
+
 }
 .language{
     background-color: rgba(36, 35, 35, 0.849);
     border-radius: 20px;
     overflow: hidden;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    gap: 5px;
+    align-items: center;
+
 }
 .languages{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
 }
 .bar{
@@ -77,4 +96,22 @@ justify-content: center;
     max-width: auto;
     align-items: center;
     justify-content:center;
-    }
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 20px;
+    gap: 15px;
+    background-color: rgba(36, 35, 35, 0.849);
+    padding: 15px;
+}
+.skill-div{
+    background-color: rgba(36, 35, 35, 0.849);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px rgba(192, 190, 190, 0.51) solid;
+    text-align: center;
+}

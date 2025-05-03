@@ -7,22 +7,29 @@ import 'react-circular-progressbar/dist/styles.css'
 
 const HomePage = () => {
   const persentage=90;
+
   return (
     <section className='HomePage'>
       <div className='profile'>
-          <p>Hi I am Kesavan<br/>web developer</p>
+          <div className='about'>
+            <h2>Hi, I'm Kesava Perumal </h2>
+            <p>A passionate web developer dedicated to crafting responsive, user-friendly websites that blend creativity with clean, efficient code. With hands-on experience in HTML, CSS, and ReactJS, I specialize in turning ideas into dynamic digital experiences.</p>
+          </div>
           <img src={Photo} alt='profile'/>
       </div>
 
       <div className='example'>
-        <div>example</div>
+        <div>
+          <p>My goal is to grow into a full-stack developer, contribute to impactful projects, and build intuitive digital experiences that solve real-world problems.
+          </p>
+        </div>
       </div>
 
       <div className='skills'>
-        <div className='skill-div'>react</div>
-        <div className='skill-div'>react</div>
-        <div className='skill-div'>react</div>
-        <div className='skill-div'>react</div>
+        <div className='skill-div'>Skills Count: 8+</div>
+        <div className='skill-div'>Project Count: 5</div>
+        <div className='skill-div'>Certifications: 6</div>
+        <div className='skill-div'>Problam solving: 0</div>
       </div>
       
       <div className='language'>
@@ -35,6 +42,7 @@ const HomePage = () => {
           />
           </div>
         </div>
+        <hr/>
         <div className='languages'>
           <p>Tamil</p>
           <div className='bar'>
