@@ -1,16 +1,25 @@
 import React from 'react'
-import resume from '../../Image/resum.pdf'
 
 const Heading = () => {
 
-  const onButtonClick = () => {
-    const pdfUrl = "../resum.pdf";
+  const DoButtonClick = () => {
+    const pdfUrl = "https://drive.google.com/uc?export=download&id=1HOjJ7i7-Hz_bMGF32cP99oqJDicO6ubb";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "";
+    link.download = "kESAVAN.PDF";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+};
+
+const ViButtonClick = () => {
+  const pdfUrl = "https://drive.google.com/file/d/1HOjJ7i7-Hz_bMGF32cP99oqJDicO6ubb/view?usp=drive_link";
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "kESAVAN.PDF";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 };
 
   return (
@@ -21,8 +30,9 @@ const Heading = () => {
         </div>
         <div className='resume'>
           <ul>
-            <li onClick={onButtonClick}>Resume</li>
-            <li>CV</li>
+            <li >Resume :</li>
+            <li onClick={ViButtonClick}>View</li>
+            <li onClick={DoButtonClick}>Download</li>
           </ul>
         </div>
     </section>
