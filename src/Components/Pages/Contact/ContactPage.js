@@ -13,7 +13,7 @@ const Contact = () => {
             <td><label>From :</label></td><td><input type='mail' required></input></td>
           </tr>
           <tr>
-            <td><input type='adderss' resource=''></input></td>
+            <td><input type='adderss'></input></td>
           </tr>
           <tr></tr>
         </table>
@@ -21,10 +21,10 @@ const Contact = () => {
       </form>
       <div className='link'>
         <ul>
-          <li>whatapp</li>
-          <li>whatapp</li>
-          <li>whatapp</li>
-          <li>whatapp</li>
+          <li>WhatApp</li>
+          <li>Phone</li>
+          <li>Linkden</li>
+          <li>Telegram</li>
         </ul>
       </div>
     </section>
