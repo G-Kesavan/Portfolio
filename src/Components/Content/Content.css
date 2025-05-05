@@ -55,3 +55,6 @@
 .resume ul li{
     display: flex;
 }
+.resume :nth-child(1){
+    color: black;
+}

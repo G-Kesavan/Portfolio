@@ -1,0 +1,23 @@
+.ContactPage{
+    height: 80%;
+    width: 95%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+.contactForm{
+    height: 100%;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    background-color: rgba(36, 35, 35, 0.849);
+    border-radius: 20px;
+}
+.link{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 35, 35, 0.849);
+    border-radius: 20px;
+}
