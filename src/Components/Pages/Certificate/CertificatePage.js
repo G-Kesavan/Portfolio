@@ -45,7 +45,7 @@ const Certificate = () => {
   ];
   const openImage = (key) => {
     const container = document.getElementById(key);
-    if (!container) return;
+    if (!container) return; 
   
     const img = container.querySelector('img');
     const details = container.getElementsByClassName('datials')[0];
