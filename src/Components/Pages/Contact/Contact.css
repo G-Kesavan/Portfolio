@@ -10,10 +10,62 @@
 .contactForm{
     height: 100%;
     width: 100%;
-    display:flex ;
+    display: flex;
     flex-direction: column;
     background-color: rgba(36, 35, 35, 0.849);
     border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.formBtn{
+    width: 30%;
+    height: 10%;
+    color: black;
+    border-radius: 13px;
+    border: solid transparent 1px;
+}
+.inputcon {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.inputcon input{
+    color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 13px;
+    border: solid 1px black;
+}
+.inputcon label,.message label{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: black;
+}
+.message label{
+    top: 15%;
+}
+.ContactPage .message{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: unset;
+    position: relative;
+}
+.message textarea{
+    height: 100%;
+    width: 90%;
+    color: black;
+    display: flex;
+    border-radius: 13px;
+    border: 1px solid black;
 }
 .link{
     height: 100%;
