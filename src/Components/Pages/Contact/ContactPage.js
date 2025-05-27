@@ -31,20 +31,20 @@ const Contact = () => {
   return (
     <section className='ContactPage'>
       <form className='contactForm' onSubmit={handleSubmit}>
-        <h1>Contact Me</h1>
+        <h2>Contact Me</h2>
 
         <div className='inputcon name'>
           <label className='label'>Name :</label>
-          <input type='text'  required className='inputvalue' value={name} onChange={(e)=>setname(e.target.value)}></input>
+          <input type='text'  required  value={name} onChange={(e)=>setname(e.target.value)} placeholder='Enter the name'></input>
         </div>
 
         <div className='inputcon email'>
           <label className='label'>From :</label>
-          <input type='email' required className='inputvalue' value={email} onChange={(e)=>setemail(e.target.value)}></input>
+          <input type='email' required  value={email} onChange={(e)=>setemail(e.target.value)} placeholder='Enter the email'></input>
         </div>
         <div className='message'>
           <label className='label'>Message :</label>
-          <textarea className='inputvalue' value={message} onChange={(e)=>setmessage(e.target.value)}></textarea>
+          <textarea  value={message} onChange={(e)=>setmessage(e.target.value)} placeholder='Enter the message'></textarea>
         </div>
 
         <button className='formBtn'>Submit</button>

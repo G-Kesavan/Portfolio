@@ -16,20 +16,20 @@
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 6px;
 }
 .formBtn{
-    width: 30%;
-    height: 10%;
+    width: 25%;
+    height: 8%;
     color: black;
-    border-radius: 13px;
+    border-radius: 10px;
     border: solid transparent 1px;
 }
 .inputcon {
     display:flex;
     flex-direction: column;
     width: 100%;
-    height: 10%;
+    height: 18%;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -37,35 +37,42 @@
 .inputcon input{
     color: black;
     width: 90%;
-    height: 90%;
-    border-radius: 13px;
+    height: 60%;
+    border-radius: 10px;
     border: solid 1px black;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
 }
-.inputcon label,.message label{
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    color: black;
+.inputcon label{
+    margin-bottom: 6px;
+    width: 90%;
 }
 .message label{
-    top: 15%;
+    margin-bottom: 6px;
+    width: 90%;
 }
 .ContactPage .message{
     width: 100%;
-    height: 30%;
+    height: 35%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: unset;
     position: relative;
 }
 .message textarea{
-    height: 100%;
+    height: 75%;
     width: 90%;
     color: black;
     display: flex;
-    border-radius: 13px;
+    border-radius: 10px;
     border: 1px solid black;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    outline: none;
 }
 .link{
     height: 100%;
