@@ -6,7 +6,8 @@ import 'react-circular-progressbar/dist/styles.css'
 
 
 const HomePage = () => {
-  const percentage=90;
+  const percentageT=90;
+  const percentageE=65;
 
   return (
     <section className='HomePage'>
@@ -19,17 +20,14 @@ const HomePage = () => {
       </div>
 
       <div className='example'>
-        <div>
-          <p>My goal is to grow into a full-stack developer, contribute to impactful projects, and build intuitive digital experiences that solve real-world problems.
-          </p>
-        </div>
+          <p>My goal is to grow into a full-stack developer, contribute to impactful projects, and build intuitive digital experiences that solve real-world problems.</p>
       </div>
 
       <div className='skills'>
-        <div className='skill-div'>Skills Count: 8+</div>
-        <div className='skill-div'>Project Count: 5</div>
-        <div className='skill-div'>Certifications: 6</div>
-        <div className='skill-div'>Problam solving: 0</div>
+        <div className='skill-div'>Skills Count : 8+</div>
+        <div className='skill-div'>Project Count : 5</div>
+        <div className='skill-div'>Certifications : 6</div>
+        <div className='skill-div'>Problam solving : 0</div>
       </div>
       
       <div className='language'>
@@ -37,8 +35,8 @@ const HomePage = () => {
           <p>English</p>
           <div className='language-bar'>
             <CircularProgressbar
-              value={percentage}
-              text={`${percentage}%`}
+              value={percentageE}
+              text={`${percentageE}%`}
               styles={buildStyles({
                 pathColor: `rgba(36, 35, 35,0.6)`,
                 textColor: 'white',
@@ -54,8 +52,8 @@ const HomePage = () => {
           <p>Tamil</p>
           <div className='language-bar'>
             <CircularProgressbar
-              value={percentage}
-              text={`${percentage}%`}
+              value={percentageT}
+              text={`${percentageT}%`}
               styles={buildStyles({
                 pathColor: `rgba(36, 35, 35,0.6)`,
                 textColor: 'white',
