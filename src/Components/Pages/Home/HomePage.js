@@ -1,12 +1,12 @@
 import React from 'react'
 import './HomePage.css'
 import Photo from '../../../Image/MyPhoto.png'
-import {CircularProgressbar} from "react-circular-progressbar"
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css'
 
 
 const HomePage = () => {
-  const persentage=90;
+  const percentage=90;
 
   return (
     <section className='HomePage'>
@@ -35,21 +35,35 @@ const HomePage = () => {
       <div className='language'>
         <div className='languages'>
           <p>English</p>
-          <div className='bar'>
-          <CircularProgressbar
-            value={persentage}
-            text={`${persentage}%`}
-          />
+          <div className='language-bar'>
+            <CircularProgressbar
+              value={percentage}
+              text={`${percentage}%`}
+              styles={buildStyles({
+                pathColor: `rgba(36, 35, 35,0.6)`,
+                textColor: 'white',
+                trailColor: 'white',
+                textSize: '16px',
+                pathTransitionDuration: 0.8,
+              })}
+            />
           </div>
         </div>
         <hr/>
         <div className='languages'>
           <p>Tamil</p>
-          <div className='bar'>
+          <div className='language-bar'>
             <CircularProgressbar
-            value={persentage}
-            text={`${persentage}%`}
-          />
+              value={percentage}
+              text={`${percentage}%`}
+              styles={buildStyles({
+                pathColor: `rgba(36, 35, 35,0.6)`,
+                textColor: 'white',
+                trailColor: 'white',
+                textSize: '16px',
+                pathTransitionDuration: 0.8,
+              })}
+            />
           </div>
         </div>      
       </div>
