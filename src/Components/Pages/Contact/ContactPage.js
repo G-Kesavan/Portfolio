@@ -2,8 +2,10 @@ import React,{useState} from 'react'
 import './Contact.css'
 import {db} from '../../../firebase'
 import { collection,addDoc } from 'firebase/firestore'
-import { IoLogoWhatsapp,IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoWhatsapp,IoLogoLinkedin,IoLocation,IoCopyOutline } from "react-icons/io5";
 import { FaPhone ,FaTelegram} from "react-icons/fa6";
+import { SiGmail} from "react-icons/si";
+import { FaUserEdit} from "react-icons/fa";
 
 const Contact = () => {
 
@@ -52,7 +54,16 @@ const Contact = () => {
         <button className='formBtn'>Submit</button>
       </form>
       <div className='link'>
-        <ul>
+        <div className='contact-details'>
+          <p>Get in touch with us for inquiries, support, or feedback.We're here to hel you every step of the way....</p>
+          <ul className='show-link'>
+            <li><FaUserEdit/><p>Kesava Perumal G</p><IoCopyOutline/></li>
+            <li><SiGmail/><p>mr.kesavaperumal@gmail.com</p><IoCopyOutline/></li>
+            <li><FaPhone /><p>+91 63 74 79 02 92</p><IoCopyOutline/></li>
+            <li><IoLocation/><p>8/277, Velikunan Kurichi, Virudhachalam TK, Cuddaloar, Tamil nadu - 607 804 ...</p><IoCopyOutline/></li>
+          </ul>
+        </div>
+        <ul className='touch-link'>
           <li><IoLogoWhatsapp /></li>
           <li><FaPhone /></li>
           <li><IoLogoLinkedin /></li>
