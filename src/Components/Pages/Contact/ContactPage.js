@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import './Contact.css'
 import {db} from '../../../firebase'
 import { collection,addDoc } from 'firebase/firestore'
+import { IoLogoWhatsapp,IoLogoLinkedin } from "react-icons/io5";
+import { FaPhone ,FaTelegram} from "react-icons/fa6";
 
 const Contact = () => {
 
@@ -51,10 +53,10 @@ const Contact = () => {
       </form>
       <div className='link'>
         <ul>
-          <li>WhatApp</li>
-          <li>Phone</li>
-          <li>Linkden</li>
-          <li>Telegram</li>
+          <li><IoLogoWhatsapp /></li>
+          <li><FaPhone /></li>
+          <li><IoLogoLinkedin /></li>
+          <li><FaTelegram/></li>
         </ul>
       </div>
     </section>

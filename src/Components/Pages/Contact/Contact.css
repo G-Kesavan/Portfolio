@@ -71,6 +71,7 @@
     border: 1px solid black;
     padding-left: 10px;
     padding-top: 10px;
+    font-size: 16px;
     overflow: hidden;
     outline: none;
 }
@@ -83,15 +84,18 @@
 }
 .link ul{
     width: 100%;
-    height: 8rem;
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .link li{
     display: flex;
     background-color: rgb(53, 49, 49);
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 150%;
 }
