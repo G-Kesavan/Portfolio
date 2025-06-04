@@ -50,11 +50,31 @@
    grid-template-rows: 1fr;
    gap: 20px;
 }
-.education{
+.edu{
     background-color: rgba(36, 35, 35, 0.849);
     border-radius: 20px;
+    list-style:circle;
 }
 .basic{
     background-color: rgba(36, 35, 35, 0.849);
     border-radius: 20px;
+}
+.edu-detial::before{
+    height: 15px;
+    width: 15px;
+    background-color: antiquewhite;
+    content: "";
+    border-radius: 50px;
+    position: absolute;
+}
+.edu li::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: white;
+}
+.edu li{
+    height: auto;
+    width: 100%;
 }
