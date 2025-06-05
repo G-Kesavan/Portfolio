@@ -1,0 +1,103 @@
+.project-wrapper {
+  width: 100%;
+  height: 78%;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glass-box {
+  border-radius: 20px;
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+
+.project-list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden; 
+}
+  
+
+.project-item {
+  min-width: 280px;
+  max-width: 300px;
+  background: rgba(36, 35, 35, 0.768);
+  border-radius: 15px;
+  padding: 15px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.project-item:hover {
+  transform: scale(1.03);
+}
+
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-content {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.tech {
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00d4ff;
+  color: black;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.scroll-btn:hover {
+  opacity: 1;
+}
+
+.scroll-left {
+  left: -10px;
+}
+
+.scroll-right {
+  right: -10px;
+}
+.project-list::-webkit-scrollbar {
+    display: none;
+}
+  
+.project-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 100%;
+    width: 100%;
+}
