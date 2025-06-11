@@ -1,57 +1,80 @@
-.Content{
-    border-radius: 30px;
+
+.Content {
+    border-radius: var(--radius-lg);
     width: 70%;
-    height: 100%;
+    height: var(--height-full);
     position: relative;
     justify-content: start;
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: rgba(90, 90, 90, 0.253);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 2px rgba(177, 176, 176, 0.938);
+    background-color: var(--background-semi-dark);
+    backdrop-filter: var(--backdrop-blur-light);
+    box-shadow: var(--box-shadow);
 }
-.heading{
+
+.heading {
     display: flex;
-    width: 100%;
+    width: var(--width-full);
     height: 15%;
     align-items: center;
     justify-content: space-between;
 }
-.message{
-   display: flex;
-   flex-direction: column;
-   gap: 2px;
-   overflow: hidden;
-   padding: 0px 0px 0px 20px;
-   width: auto;
-   height: 100%;
-   justify-content: center;
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+    padding-left: 20px;
+    width: auto;
+    height: var(--height-full);
+    justify-content: center;
 }
-.message h2{
- font-size: 24px;
+
+.message h2 {
+    font-size: var(--font-size-large);
 }
-.message h5{
- font-size: 17px;
+
+.message h5 {
+    font-size: 17px;
 }
-.resume{
-    height: 100%;
+
+.resume {
+    height: var(--height-full);
     width: 18rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.resume ul{
+
+.resume ul {
     height: 50%;
     width: 16rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    border-radius: 3rem;
-    background-color: rgba(36, 35, 35, 0.849);
+    gap: var(--gap-md);
+    border-radius: var(--radius-xl);
+    background-color: var(--background-dark);
     box-shadow: 0px 0px 2px;
 }
-.resume ul li{
+
+.resume ul li {
     display: flex;
+}
+
+@media (max-width: 1024px) {
+    .Content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .Content p{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 16px;
+    }
 }

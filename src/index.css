@@ -1,17 +1,86 @@
-*{
+:root {
+  /* Colors */
+  --primary-color: #ebf6f6;
+  --secondary-color: #ccc;
+  --font-color: aliceblue;
+  --background-dark: rgba(36, 35, 35, 0.849);
+  --background-dark-strong: rgba(36, 35, 35, 0.927);
+  --background-semi-dark: rgba(90, 90, 90, 0.253);
+  --navbar-color: rgba(105, 98, 98, 0.74);
+  --highlight-bg: #c6c1c1bd;
+  --project-hover: rgba(36, 35, 35, 0.768);
+  --touch-icon-bg: rgb(53, 49, 49);
+
+  /* Shadows and Blur */
+  --box-shadow: 0px 0px 2px rgba(177, 176, 176, 0.938);
+  --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  --backdrop-blur-light: blur(10px);
+  --backdrop-blur-heavy: blur(50px);
+
+  /* Border Radius */
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+  --radius-xl: 3rem;
+  --touch-icon-radius: 20px;
+  --form-radius: 20px;
+  --input-radius: 10px;
+
+  /* Fonts */
+  --font-family: 'Segoe UI', sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --font-size-large: 24px;
+  --font-size-contact: 18px;
+
+  /* Layout & Spacing */
+  --width-full: 100%;
+  --height-full: 100%;
+  --container-width: 95%;
+  --container-height: 80%;
+  --gap-sm: 5px;
+  --gap-md: 10px;
+  --gap-lg: 20px;
+  --section-gap: 20px;
+  --input-padding: 10px;
+  --label-padding: 0px 5px;
+
+  /* Timeline */
+  --timeline-dot-size: 16px;
+  --timeline-line-width: 5px;
+  --timeline-border: white solid 0.3px;
+
+  /* Touch Links */
+  --touch-icon-size: 80%;
+  --touch-icon-width: 21%;
+
+  /* Buttons */
+  --button-bg: black;
+  --button-color: white;
+  --button-border: 2px solid white;
+
+  /* Forms */
+  --form-bg-color: rgba(36, 35, 35, 0.849);
+  --input-bg-color: black;
+  --input-text-color: black;
+}
+
+* {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   list-style: none;
-  color: aliceblue;
-  font-family:  sans-serif;
-  
+  color: var(--font-color);
+  font-family: var(--font-family);
 }
-body{
+
+body {
   height: 110vh;
-  width: 100%;
+  width: var(--width-full);
 }
-#root{
+
+#root {
   height: 110vh;
-  width: 100%;
+  width: var(--width-full);
 }

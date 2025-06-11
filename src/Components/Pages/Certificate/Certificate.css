@@ -1,56 +1,65 @@
+
 .embla {
-    overflow: hidden;
-    height: 80%;
-    width: 95%;
-  }
-  .certificates {
-    display: flex;
-    height: 100%;
-    width: 100%;
-  }
-  .certificate {
-    flex: 0 0 29%;
-    background-color:rgba(36, 35, 35, 0.849) ;
-    border-radius: 20px;
-    padding: 15px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  .embla img{
-    height: 50%;
-    width:100%;
-    border-radius: 15px;
-  }
-  .emba img:hover{
-    height: 400px;
-    width: 800px;
-  }
-  .datials{
-    height: 40%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .datials h2{
-    font-size: 20px;
-  }
-  .datials p{
-    font-size: 16px;
-    text-align:justify;
-    margin: 5px;
-  }
-  .closeBtn{
-    position: absolute;
-    margin: 10px;
-    height: 25px;
-    width: 25px;
-    color:white;
-    border-radius: 50%;
-    background-color: black;
-    border: solid 2px white;
-    display: none;
-  }
+  overflow: hidden;
+  height: var(--container-height);
+  width: var(--container-width);
+}
+
+.certificates {
+  display: flex;
+  height: var(--height-full);
+  width: var(--width-full);
+}
+
+.certificate {
+  flex: 0 0 29%;
+  background-color: var(--background-dark);
+  border-radius: var(--radius-md);
+  padding: var(--gap-md);
+  margin: var(--gap-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  text-align: center;
+}
+
+.embla img {
+  height: 50%;
+  width: var(--width-full);
+  border-radius: var(--radius-sm);
+}
+
+.emba img:hover {
+  height: 400px;
+  width: 800px;
+}
+
+.datials {
+  height: 40%;
+  width: var(--width-full);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.datials h2 {
+  font-size: var(--font-size-medium);
+}
+
+.datials p {
+  font-size: var(--font-size-base);
+  text-align: justify;
+  margin: var(--gap-sm);
+}
+
+.closeBtn {
+  position: absolute;
+  margin: var(--gap-sm);
+  height: 25px;
+  width: 25px;
+  color: var(--button-color);
+  border-radius: 50%;
+  background-color: var(--button-bg);
+  border: var(--button-border);
+  display: none;
+}

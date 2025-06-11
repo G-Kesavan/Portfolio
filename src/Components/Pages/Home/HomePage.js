@@ -4,23 +4,22 @@ import Photo from '../../../Image/MyPhoto.png'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css'
 
-
 const HomePage = () => {
-  const percentageT=90;
-  const percentageE=65;
+  const percentageT = 90;
+  const percentageE = 65;
 
   return (
     <section className='HomePage'>
       <div className='profile'>
-          <div className='about'>
-            <h2>Hi, I'm Kesava Perumal </h2>
-            <p>A passionate web developer dedicated to crafting responsive, user-friendly websites that blend creativity with clean, efficient code. With hands-on experience in HTML, CSS, and ReactJS, I specialize in turning ideas into dynamic digital experiences.</p>
-          </div>
-          <img src={Photo} alt='profile'/>
+        <div className='about'>
+          <h2>Hi, I'm Kesava Perumal </h2>
+          <p>A passionate web developer dedicated to crafting responsive, user-friendly websites that blend creativity with clean, efficient code. With hands-on experience in HTML, CSS, and ReactJS, I specialize in turning ideas into dynamic digital experiences.</p>
+        </div>
+        <img src={Photo} alt='profile' />
       </div>
 
       <div className='example'>
-          <p>My goal is to grow into a full-stack developer, contribute to impactful projects, and build intuitive digital experiences that solve real-world problems.</p>
+        <p>My goal is to grow into a full-stack developer, contribute to impactful projects, and build intuitive digital experiences that solve real-world problems.</p>
       </div>
 
       <div className='skills'>
@@ -29,7 +28,7 @@ const HomePage = () => {
         <div className='skill-div'>Certifications : 6</div>
         <div className='skill-div'>Problam solving : 0</div>
       </div>
-      
+
       <div className='language'>
         <div className='languages'>
           <p>English</p>
@@ -47,7 +46,7 @@ const HomePage = () => {
             />
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className='languages'>
           <p>Tamil</p>
           <div className='language-bar'>
@@ -63,7 +62,7 @@ const HomePage = () => {
               })}
             />
           </div>
-        </div>      
+        </div>
       </div>
     </section>
   )

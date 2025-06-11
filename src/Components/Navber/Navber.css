@@ -1,21 +1,24 @@
-.navbar{
+
+.navbar {
     height: 8%;
     width: 35%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3rem;
-    background-color: #696262bd;
-    backdrop-filter: blur(50px);
-    box-shadow: 0px 0px 2px;
+    border-radius: var(--radius-xl);
+    background-color: var(--navbar-color);
+    backdrop-filter: var(--backdrop-blur-heavy);
+    box-shadow: var(--box-shadow);
     bottom: -5%;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
-    gap :1rem;
+    gap: var(--gap-md);
 }
-.navbar ul li{
+
+.navbar ul li {
     display: flex;
     align-items: center;
     justify-content: center;

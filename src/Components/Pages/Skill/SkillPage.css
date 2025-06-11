@@ -1,62 +1,71 @@
-.SkillPage{
-    height: 80%;
-    width: 95%;
+
+.SkillPage {
+    height: var(--container-height);
+    width: var(--container-width);
     display: grid;
     grid-template-columns: 1.5fr 3.5fr;
     grid-template-rows: 100% 100%;
-    gap:min(20px);
+    gap: var(--gap-lg);
 }
-.AboutSkill{
+
+.AboutSkill {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 30px;
-    background-color: rgba(36, 35, 35, 0.849);
+    border-radius: var(--radius-lg);
+    background-color: var(--background-dark);
     text-align: center;
 }
-.AboutSkill h1{
-    width: 100%;
+
+.AboutSkill h1 {
+    width: var(--width-full);
     height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.skill-bar{
+
+.skill-bar {
     width: 65%;
     height: auto;
     margin-bottom: 5%;
 }
-.AboutSkill p{
+
+.AboutSkill p {
     width: 85%;
     height: auto;
     text-align: center;
     font-size: 1.1rem;
 }
-.MySkills ul{
-    height: 100%;
-    width: 100%;
+
+.MySkills ul {
+    height: var(--height-full);
+    width: var(--width-full);
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: var(--gap-lg);
 }
-.MySkills ul li{
+
+.MySkills ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
-    background-color: rgba(36, 35, 35, 0.849);
-    height: 100%;
-    width: 100%;
-    gap: 10px;
+    border-radius: var(--radius-lg);
+    background-color: var(--background-dark);
+    height: var(--height-full);
+    width: var(--width-full);
+    gap: var(--gap-md);
 }
-.icon-con{
+
+.icon-con {
     height: 30%;
     width: auto;
-    font-size:3rem;
+    font-size: 3rem;
 }
-.MySkills ul li h3{
-    font-size:1rem;
+
+.MySkills ul li h3 {
+    font-size: var(--font-size-small);
     height: auto;
 }

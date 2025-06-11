@@ -1,58 +1,65 @@
-.ContactPage{
-    height: 80%;
-    width: 95%;
+.ContactPage {
+    height: var(--container-height);
+    width: var(--container-width);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 20px;
-}
-.contactForm{
+    gap: var(--section-gap);
+  }
+  
+  .contactForm {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(36, 35, 35, 0.849);
-    border-radius: 20px;
+    background-color: var(--form-bg-color);
+    border-radius: var(--form-radius);
     align-items: center;
     justify-content: center;
     gap: 6px;
-}
-.formBtn{
+  }
+  
+  .formBtn {
     width: 25%;
     height: 8%;
-    color: black;
-    border-radius: 10px;
+    color: var(--input-text-color);
+    border-radius: var(--input-radius);
     border: solid transparent 1px;
-}
-.inputcon {
-    display:flex;
+  }
+  
+  .inputcon {
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 18%;
     align-items: center;
     justify-content: center;
     position: relative;
-}
-.inputcon input{
-    color: black;
+  }
+  
+  .inputcon input {
+    color: var(--input-text-color);
     width: 90%;
     height: 60%;
-    border-radius: 10px;
-    border: solid 1px black;
-    padding-left: 10px;
-    font-size: 16px;
+    border-radius: var(--input-radius);
+    border: solid 1px var(--input-bg-color);
+    padding-left: var(--input-padding);
+    font-size: var(--font-size-base);
     outline: none;
-}
-.inputcon label{
+  }
+  
+  .inputcon label {
     margin-bottom: 6px;
     width: 90%;
-}
-.message label{
+  }
+  
+  .message label {
     margin-bottom: 6px;
     width: 90%;
-}
-.ContactPage .message{
+  }
+  
+  .ContactPage .message {
     width: 100%;
     height: 35%;
     display: flex;
@@ -61,49 +68,54 @@
     justify-content: center;
     padding: unset;
     position: relative;
-}
-.message textarea{
+  }
+  
+  .message textarea {
     height: 75%;
     width: 90%;
-    color: black;
+    color: var(--input-text-color);
     display: flex;
-    border-radius: 10px;
-    border: 1px solid black;
-    padding-left: 10px;
-    padding-top: 10px;
+    border-radius: var(--input-radius);
+    border: 1px solid var(--input-bg-color);
+    padding-left: var(--input-padding);
+    padding-top: var(--input-padding);
     overflow: hidden;
     outline: none;
-    font-size: 16px;
-}
-.link{
+    font-size: var(--font-size-base);
+  }
+  
+  .link {
     height: 100%;
     width: 100%;
-    background-color: rgba(36, 35, 35, 0.849);
-    border-radius: 20px;
+    background-color: var(--form-bg-color);
+    border-radius: var(--form-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.touch-link{
+  }
+  
+  .touch-link {
     width: 90%;
     height: 20%;
     display: flex;
-    gap: 10px;
+    gap: var(--input-padding);
     align-items: center;
     justify-content: space-evenly;
-}
-.touch-link li{
+  }
+  
+  .touch-link li {
     display: flex;
-    background-color: rgb(53, 49, 49);
-    height: 80%;
-    width: 21%;
-    border-radius: 20px;
+    background-color: var(--touch-icon-bg);
+    height: var(--touch-icon-size);
+    width: var(--touch-icon-width);
+    border-radius: var(--touch-icon-radius);
     font-size: 200%;
     align-items: center;
     justify-content: center;
-}
-.contact-details{
+  }
+  
+  .contact-details {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,27 +123,30 @@
     gap: 10px;
     height: 70%;
     width: 90%;
-    font-size: 18px;
-}
-.show-link{
+    font-size: var(--font-size-contact);
+  }
+  
+  .show-link {
     display: flex;
     flex-direction: column;
     width: 90%;
     height: 70%;
     justify-content: space-evenly;
-}
-.show-link li{
+  }
+  
+  .show-link li {
     display: flex;
-    font-size: 1.5rem;
-    gap:10px;
+    font-size: var(--font-size-large);
+    gap: var(--input-padding);
     align-items: center;
     height: auto;
     width: 100%;
     justify-content: space-between;
-
-}
-.show-link li p{
+  }
+  
+  .show-link li p {
     display: flex;
     width: 90%;
-    font-size: 1rem;
-}
+    font-size: var(--font-size-medium);
+  }
+  
