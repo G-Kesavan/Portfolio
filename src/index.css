@@ -84,3 +84,31 @@ body {
   height: 110vh;
   width: var(--width-full);
 }
+
+@media (max-width: 760px) {
+  body {
+    height: 210vh;
+    width: var(--width-full);
+  }
+
+  #root {
+    height: 210vh;
+    width: var(--width-full);
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+   .Content{
+    width: 95%;
+   }
+
+   main{
+    height: 180vh;
+   }
+}

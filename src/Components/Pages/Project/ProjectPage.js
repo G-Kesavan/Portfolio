@@ -70,9 +70,7 @@ const ProjectPage = () => {
                 <strong>{project.title}</strong><br />
                 <span className='tech'>Tech Used:</span> {project.tech}<br />
                 <span>{project.desc}</span><br />
-                <a href={project.link} target='_blank' rel='noreferrer' className='project-link'>
-                  🔗 View Project
-                </a>
+                <a href={project.link} target='_blank' rel='noreferrer' className='project-link'>🔗 View Project</a>
               </div>
             </div>
           ))}
