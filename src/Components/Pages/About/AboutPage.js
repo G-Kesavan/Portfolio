@@ -17,7 +17,7 @@ const About = () => {
 
         <div className="about-item">
           <h3>Qualification</h3>
-          <p>B.Sc Computer Science</p>
+          <p>BCA bachelor of Computer Application</p>
         </div>
 
         <div className="about-item">

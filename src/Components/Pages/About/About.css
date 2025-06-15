@@ -28,9 +28,11 @@
 .about-details {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100%;
   width: 60%;
   overflow: hidden;
+  align-items: start;
+  justify-content: start;
 }
 
 .about-item h3 {
@@ -46,15 +48,6 @@
   line-height: 1.5;
 }
 
-  
-.about-details {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: 60%;
-  overflow: hidden;
-}
-
 .about-item h3 {
   margin: 0;
   font-size: var(--font-size-medium);
@@ -67,4 +60,19 @@
   font-size: var(--font-size-small);
   line-height: 1.5;
 }
+@media (max-width: 760px) {
+  .AboutPage {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-img {
+    height: 50%;
+    width: auto;
+  }
+  .about-details {
+    height: 40%;
+    width: 80%;
+  }
+} 
   

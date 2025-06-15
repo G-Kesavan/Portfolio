@@ -104,11 +104,14 @@ body {
     display: none;
   }
 
-   .Content{
+  .Content{
     width: 95%;
-   }
+  }
 
-   main{
+  main{
     height: 180vh;
-   }
+  }
+  :root{
+    --container-height: 83%;
+  }
 }

@@ -149,4 +149,9 @@
     width: 90%;
     font-size: var(--font-size-medium);
   }
-  
+  @media (max-width: 760px) {
+    .ContactPage {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }  
