@@ -1,6 +1,6 @@
 
 .sidebar {
-    height: var(--height-full);
+    height: 40%;
     width: 8%;
     display: flex;
     align-items: center;
@@ -12,11 +12,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    height: var(--height-full);
     width: 40%;
     border-radius: var(--radius-xl);
     background-color: var(--navbar-color);
     backdrop-filter: var(--backdrop-blur-light);
     box-shadow: var(--box-shadow);
     gap: var(--gap-lg);
+    padding: 10px 5px 10px 5px;
+}
+
+@media (max-width: 760px) {
+.sidebar {
+    position:fixed;
+    z-index: 200;
+    bottom: 15vh;
+    right: 5vw;
+    justify-content: flex-end;
+}
+.sidebar ul {
+padding: 10px 20px 10px 20px;
+}
 }

@@ -96,16 +96,24 @@ body {
     width: var(--width-full);
   }
 
-  .sidebar {
-    display: none;
+  header{
+    height: 4vh;
   }
 
-  .navbar {
+   header h1{
     display: none;
-  }
+   }
+
+  /* .sidebar {
+    display: none;
+  } */
+
+  /* .navbar {
+    display: none;
+  } */
 
   .Content{
-    width: 95%;
+    width: 90%;
   }
 
   main{
