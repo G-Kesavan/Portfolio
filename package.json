@@ -11,6 +11,7 @@
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "firebase": "^11.8.1",
+    "firebase-tools": "^14.7.0",
     "react": "^19.1.0",
     "react-circular-progressbar": "^2.2.0",
     "react-dom": "^19.1.0",
