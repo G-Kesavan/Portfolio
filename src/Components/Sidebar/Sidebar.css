@@ -1,8 +1,7 @@
 
 .sidebar {
     height: 40%;
-    width: 8%;
-    display: flex;
+    width: 8%; 
     align-items: center;
     justify-content: flex-start;
 }
@@ -24,13 +23,15 @@
 
 @media (max-width: 760px) {
 .sidebar {
+    height: auto;
     position:fixed;
     z-index: 200;
-    bottom: 15vh;
-    right: 5vw;
+    bottom: 80px;
+    right: 1.5rem;;
     justify-content: flex-end;
+    font-size: small;
 }
 .sidebar ul {
-padding: 10px 20px 10px 20px;
+padding: 20px;
 }
 }

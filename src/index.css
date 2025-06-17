@@ -97,20 +97,16 @@ body {
   }
 
   header{
-    height: 4vh;
+    height: 10vh;
   }
 
-   header h1{
+  .sidebar {
     display: none;
-   }
+  }
 
-  /* .sidebar {
+  .navbar {
     display: none;
-  } */
-
-  /* .navbar {
-    display: none;
-  } */
+  }
 
   .Content{
     width: 90%;

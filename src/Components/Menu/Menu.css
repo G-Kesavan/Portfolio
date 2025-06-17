@@ -1,0 +1,30 @@
+.menu{
+    display: none;
+}
+.showMenu{
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.closeMenu{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    color: black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 760px) {
+    .menu{
+        display: flex;
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}

@@ -23,12 +23,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: small;
 }
 
 @media (max-width: 760px) {
 .navbar {
     position:fixed;
-    top: 90vh;
-    right:20vw;
+    bottom: 1.5rem;
+    right:80px;
+    background-color: rgb(87, 81, 81);
+
 }
 }
