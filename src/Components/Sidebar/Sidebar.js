@@ -10,10 +10,10 @@ const Sidebar = ({SetValue}) => {
   return (
     <nav className='sidebar'>
       <ul>
-        <li onClick={()=>SetValue('home')}><FaHome /></li>
-        <li onClick={()=>SetValue('about')}><IoMdContact /></li>
-        <li onClick={()=>SetValue('contact')}><FaPhone /></li>
-        <li onClick={()=>SetValue('biodata')}><SiBiome /></li>
+        <li onClick={()=>SetValue('home')}><FaHome />Home</li>
+        <li onClick={()=>SetValue('about')}><IoMdContact />About</li>
+        <li onClick={()=>SetValue('contact')}><FaPhone />Contact</li>
+        <li onClick={()=>SetValue('biodata')}><SiBiome />Biodata</li>
       </ul>
     </nav>
   )

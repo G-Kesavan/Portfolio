@@ -1,9 +1,12 @@
 
 .sidebar {
-    height: 40%;
-    width: 8%; 
+    height:auto;
+    width: auto; 
     align-items: center;
     justify-content: flex-start;
+    padding-right: 2rem;
+    animation: sideMenu 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .sidebar ul {
@@ -12,13 +15,35 @@
     align-items: center;
     justify-content: center;
     height: var(--height-full);
-    width: 40%;
+    width: auto;
     border-radius: var(--radius-xl);
     background-color: var(--navbar-color);
     backdrop-filter: var(--backdrop-blur-light);
     box-shadow: var(--box-shadow);
-    gap: var(--gap-lg);
     padding: 10px 5px 10px 5px;
+}
+.sidebar ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    gap:2px;
+    height: 25%;
+    width: var(--width-full);
+    padding: 8px 0px 8px 0px;
+}
+
+@keyframes sideMenu {
+    0%{
+        height: 0%;
+    }
+    60%{
+       height:30%;
+    }
+    100%{
+       height: auto;
+    }
 }
 
 @media (max-width: 760px) {
@@ -29,9 +54,12 @@
     bottom: 80px;
     right: 1.5rem;;
     justify-content: flex-end;
-    font-size: small;
+    padding-right: unset;
+    border-radius: var(--radius-xl);
 }
+
 .sidebar ul {
-padding: 20px;
+padding: 15px 5px 20px 5px;
 }
+
 }

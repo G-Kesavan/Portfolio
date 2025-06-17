@@ -11,19 +11,20 @@
     backdrop-filter: var(--backdrop-blur-heavy);
     box-shadow: var(--box-shadow);
     bottom:-5%;   
+    overflow: hidden;
+    animation: navMenu 0.3s ease-in-out;
 }
 
 .navbar ul {
     display: flex;
-    gap: var(--gap-md);
-    padding: 0px 10px 0px 10px;
+    gap: var(--gap-lg);
+    padding: 5px 20px 5px 20px;
 }
 
 .navbar ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: small;
 }
 
 @media (max-width: 760px) {
@@ -34,4 +35,25 @@
     background-color: rgb(87, 81, 81);
 
 }
+.navbar ul{
+    gap: var(--gap-md);
+}
+
+.navbar ul li {
+    font-size:small;
+    flex-direction: column;
+    gap: 2px;
+}
+}
+
+@keyframes navMenu {
+    0%{
+        width: 0%;
+    }
+    60%{
+        width:40%;
+    }
+    100%{
+        width: auto;
+    }
 }
