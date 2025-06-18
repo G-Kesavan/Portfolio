@@ -3,8 +3,8 @@
 }
 .showMenu{
     display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     color: black;
     border-radius: 50%;
     align-items: center;
@@ -12,8 +12,8 @@
 }
 .closeMenu{
     display: none;
-    width: 3rem;
-    height: 3rem;
+    width: 3.2rem;
+    height: 3.2rem;
     color: black;
     border-radius: 50%;
     align-items: center;

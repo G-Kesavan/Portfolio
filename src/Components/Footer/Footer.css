@@ -5,6 +5,6 @@ footer{
     align-items: center;
     justify-content: center;
     color: black;
-    position: absolute;
+    margin-top: 10vh;
     bottom: 0;
 }

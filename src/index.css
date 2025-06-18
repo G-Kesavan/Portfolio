@@ -96,10 +96,6 @@ body {
     width: var(--width-full);
   }
 
-  header{
-    height: 10vh;
-  }
-
   .sidebar {
     display: none;
   }
@@ -112,10 +108,15 @@ body {
     width: 90%;
   }
 
+  header{
+    height: 8vh;
+  }
+
   main{
-    height: 180vh;
+    height: 182vh;
   }
   :root{
-    --container-height: 83%;
+    --container-height: 88%;
+    
   }
 }
