@@ -18,19 +18,19 @@ const HomePage = () => {
         <img src={Photo} alt='profile' />
       </div>
 
-      <div className='example'>
+      <div className='gole'>
         <p>My goal is to grow into a full-stack developer, contribute to impactful projects, and build intuitive digital experiences that solve real-world problems.</p>
       </div>
 
       <div className='skills'>
-        <div className='skill-div'>Skills Count : 8+</div>
-        <div className='skill-div'>Project Count : 5</div>
-        <div className='skill-div'>Certifications : 6</div>
-        <div className='skill-div'>Problam solving : 0</div>
+        <div className='skill'>Skills Count : 8+</div>
+        <div className='skill'>Project Count : 5</div>
+        <div className='skill'>Certifications : 6</div>
+        <div className='skill'>Problam solving : 0</div>
       </div>
 
-      <div className='language'>
-        <div className='languages'>
+      <div className='language-box'>
+        <div className='language'>
           <p>English</p>
           <div className='language-bar'>
             <CircularProgressbar
@@ -47,7 +47,7 @@ const HomePage = () => {
           </div>
         </div>
         <hr />
-        <div className='languages'>
+        <div className='language'>
           <p>Tamil</p>
           <div className='language-bar'>
             <CircularProgressbar

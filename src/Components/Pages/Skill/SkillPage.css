@@ -9,12 +9,16 @@
 }
 
 .AboutSkill {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     border-radius: var(--radius-lg);
     background-color: var(--background-dark);
     text-align: center;
+    overflow: hidden;
 }
 
 .AboutSkill h1 {
@@ -26,16 +30,19 @@
 }
 
 .skill-bar {
-    width: 65%;
-    height: auto;
-    margin-bottom: 5%;
+    width: auto;
+    height: 40%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 2%;
 }
 
 .AboutSkill p {
-    width: 85%;
-    height: auto;
+    width: 90%;
+    height: 43%;
     text-align: center;
     font-size: 1.1rem;
+    overflow: hidden;
 }
 
 .MySkills ul {
@@ -68,4 +75,11 @@
 .MySkills ul li h3 {
     font-size: var(--font-size-small);
     height: auto;
+}
+
+@media (max-width:720px) {
+    .SkillPage {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 2fr;
+}
 }

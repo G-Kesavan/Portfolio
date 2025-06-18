@@ -11,7 +11,7 @@ import ExperiencePage from '../Pages/Experience/ExperiencePage'
 import CertificatePage from '../Pages/Certificate/CertificatePage'
 
 
-const Content = ({value,SetValue}) => {
+const Content = ({value}) => {
 
   return (
     <article className='Content'>

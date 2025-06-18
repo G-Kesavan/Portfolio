@@ -7,8 +7,10 @@
 
 .certificates {
   display: flex;
+
   height: var(--height-full);
   width: var(--width-full);
+
 }
 
 .certificate {
@@ -62,4 +64,13 @@
   background-color: var(--button-bg);
   border: var(--button-border);
   display: none;
+}
+@media (max-width:720px) {
+  .certificates {
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: 20px;
+
+}
 }
