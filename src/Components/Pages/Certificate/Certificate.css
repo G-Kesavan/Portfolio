@@ -70,7 +70,8 @@
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: scroll;
-  scrollbar-width: 20px;
-
+}
+.certificates::-webkit-scrollbar{
+  display: none;
 }
 }
