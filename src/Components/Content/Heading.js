@@ -1,4 +1,6 @@
 import React from 'react'
+import { IoMdDownload  } from "react-icons/io";
+import { MdOutlinePageview } from "react-icons/md";
 
 const Heading = () => {
 
@@ -30,9 +32,9 @@ const ViButtonClick = () => {
         </div>
         <div className='resume'>
           <ul>
-            <li >Resume :</li>
-            <li onClick={ViButtonClick}>View</li>
-            <li onClick={DoButtonClick}>Download</li>
+            <li >RESUME</li>
+            <li onClick={ViButtonClick}><p className='resum-text'>VIEW</p>&nbsp;<MdOutlinePageview fontSize='20px'/></li>
+            <li onClick={DoButtonClick}><p className='resum-text'>DOWNLOAD</p>&nbsp;<IoMdDownload fontSize='18px' /></li>
           </ul>
         </div>
     </section>
