@@ -3,24 +3,29 @@
 }
 .showMenu{
     display: flex;
-    width: 3rem;
-    height: 3rem;
-    color: black;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: white;
+    background-color: var(--background-dark);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    border: white 0.5px solid;
+
 }
 .closeMenu{
     display: none;
-    width: 3.2rem;
-    height: 3.2rem;
-    color: black;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    background-color: var(--background-dark);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    border: white 0.5px solid;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
     .menu{
         display: flex;
         position: fixed;

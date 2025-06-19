@@ -62,12 +62,12 @@
     gap: 2px;
     border-radius: var(--radius-xl);
     background-color: var(--background-dark);
-    box-shadow: 0px 0px 2px;
+    box-shadow: 0px 0px 2px
 }
 
 .resume ul li {
     display: flex;
-    font-size: calc(13px + 0.3vw);
+    font-size: calc(11px + 0.3vw);
     cursor:pointer;
     padding: 0px 5px 0px 5px;
     align-items: center;
@@ -100,10 +100,6 @@
         box-shadow:none;
     }
         
-}
-
-@media (max-width: 520px) {
-
     .resum-text{
         display: none;
     }

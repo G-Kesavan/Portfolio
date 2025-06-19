@@ -24,7 +24,7 @@
     width: 25%;
     height: 8%;
     color: var(--input-text-color);
-    border-radius: var(--input-radius);
+    border-radius: 20px;
     border: solid transparent 1px;
   }
   
@@ -133,6 +133,12 @@
     height: 70%;
     justify-content: space-evenly;
   }
+  .show-link :nth-child(2){
+    
+  }
+  .show-link :nth-child(2) p ::-webkit-scrollbar{
+  display: none;
+  }
   
   .show-link li {
     display: flex;
@@ -142,12 +148,13 @@
     height: auto;
     width: 100%;
     justify-content: space-between;
+    font-size: calc(16px + 0.5vw);
   }
   
   .show-link li p {
     display: flex;
-    width: 90%;
-    font-size: var(--font-size-medium);
+    width: 80%;
+    overflow: scroll;
   }
   @media (max-width: 760px) {
     .ContactPage {
