@@ -85,7 +85,7 @@ body {
   width: var(--width-full);
 }
 
-@media (max-width: 524px), (max-height: 700px) {
+@media (max-width: 524px), (max-height: 524px) {
   body {
     height: 210vh;
     width: var(--width-full);
@@ -112,7 +112,27 @@ body {
     height: 182vh;
   }
   :root{
-    --container-height: 90%;
+    --container-height: 85%;
     
+  }
+}
+
+@media (max-height: 524px) {
+  body {
+    height: 260vh;
+    width: var(--width-full);
+  }
+
+  #root {
+    height: 260vh;
+    width: var(--width-full);
+  }
+
+  header{
+    height: 15vh;
+  }
+
+  main{
+    height: 235vh;
   }
 }

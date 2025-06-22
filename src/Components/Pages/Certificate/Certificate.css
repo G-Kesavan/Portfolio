@@ -37,7 +37,7 @@
 }
 
 .datials {
-  height: 40%;
+  height: 50%;
   width: var(--width-full);
   display: flex;
   flex-direction: column;
@@ -52,6 +52,9 @@
   font-size: var(--font-size-base);
   text-align: justify;
   margin: var(--gap-sm);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .closeBtn {
@@ -65,7 +68,7 @@
   border: var(--button-border);
   display: none;
 }
-@media (max-width: 524px), (max-height: 700px) {
+@media (max-width: 524px), (max-height: 524px) {
   .certificates {
   flex-direction: column;
   overflow-x: hidden;

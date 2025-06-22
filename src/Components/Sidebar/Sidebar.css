@@ -46,7 +46,13 @@
     }
 }
 
-@media (max-width: 524px), (max-height: 700px) {
+@media (max-width: 824px) {
+    .sidebar {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 524px), (max-height: 524px) {
 .sidebar {
     height: auto;
     position:fixed;

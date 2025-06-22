@@ -27,7 +27,11 @@
     justify-content: center;
 }
 
-@media (max-width: 524px), (max-height: 700px) {
+@media (max-width: 824px) {
+
+}
+
+@media (max-width: 524px), (max-height: 524px) {
 .navbar {
     position:fixed;
     bottom: 1.5rem;

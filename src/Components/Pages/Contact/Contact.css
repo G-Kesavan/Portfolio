@@ -113,6 +113,7 @@
     font-size: 200%;
     align-items: center;
     justify-content: center;
+    
   }
   
   .contact-details {
@@ -155,8 +156,11 @@
     display: flex;
     width: 80%;
     overflow: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  @media (max-width: 524px), (max-height: 700px) {
+  @media (max-width: 524px), (max-height: 524px) {
     .ContactPage {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
