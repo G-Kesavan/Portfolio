@@ -65,7 +65,7 @@
   border: var(--button-border);
   display: none;
 }
-@media (max-width:720px) {
+@media (max-width: 524px), (max-height: 700px) {
   .certificates {
   flex-direction: column;
   overflow-x: hidden;

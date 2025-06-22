@@ -1,3 +1,4 @@
+/*tv or larg screen*/
 
 .Content {
     border-radius: var(--radius-lg);
@@ -73,26 +74,30 @@
     align-items: center;
     justify-content: center;
 }
-@media (max-width: 1120px) {
+@media (max-width: 1024px) {
     .Content {
         width: 80%;
     }
 }
-@media (max-width: 920px) {
+@media (max-width: 824px) {
     .Content {
         width: 85%;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 524px), (max-height: 700px) {
+
+    .Content{
+        width: 95%;
+    }
 
     .heading {
-        height: 8%;
+        height: auto;
         background-color: var(--background-dark);
         border-radius: 20px;
         margin-bottom: 15px;
         width: 95%;
-        padding-bottom: 10px; 
+        padding: 10px;
     }
     .Content {
         background-color: transparent;

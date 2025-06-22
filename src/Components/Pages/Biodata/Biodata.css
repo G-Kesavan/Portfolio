@@ -165,7 +165,7 @@
     padding-left: 10px;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 524px), (max-height: 700px) {
     .BiodataPage {
       flex-direction: column;
     }

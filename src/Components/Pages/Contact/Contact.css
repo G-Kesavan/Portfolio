@@ -156,7 +156,7 @@
     width: 80%;
     overflow: scroll;
   }
-  @media (max-width: 760px) {
+  @media (max-width: 524px), (max-height: 700px) {
     .ContactPage {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;

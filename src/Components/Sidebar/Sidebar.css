@@ -46,7 +46,7 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 524px), (max-height: 700px) {
 .sidebar {
     height: auto;
     position:fixed;

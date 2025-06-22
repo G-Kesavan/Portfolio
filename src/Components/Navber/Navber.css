@@ -27,12 +27,13 @@
     justify-content: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 524px), (max-height: 700px) {
 .navbar {
     position:fixed;
     bottom: 1.5rem;
     right:80px;
     background-color: rgb(87, 81, 81);
+    padding: 10px;
 
 }
 .navbar ul{

@@ -130,7 +130,7 @@
     text-align: center;
     font-size: calc(11px + 0.3vw);
 }
-@media (max-width: 720px) {
+@media (max-width: 524px), (max-height: 700px) {
 
     .HomePage {
         grid-template-columns: 1fr 1fr;
@@ -179,5 +179,23 @@
     }
     .language-bar {
     height: 75%;
+    }
+}
+
+@media (max-height: 400px) {
+    .profile {
+        grid-column: 1/3;
+        flex-direction: row;
+        flex-flow: unset;
+    }
+
+    .profile img {
+        height: 90%;
+        max-width: 35%;
+        min-width: 10%;
+    }
+    .profile .about {
+        width: 60%;
+        height: 100%;
     }
 }

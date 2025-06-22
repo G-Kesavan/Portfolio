@@ -85,7 +85,7 @@ body {
   width: var(--width-full);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 524px), (max-height: 700px) {
   body {
     height: 210vh;
     width: var(--width-full);
@@ -102,10 +102,6 @@ body {
 
   .navbar {
     display: none;
-  }
-
-  .Content{
-    width: 95%;
   }
 
   header{
