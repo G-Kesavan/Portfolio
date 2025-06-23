@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomePage.css'
+import './Home.css'
 import Photo from '../../../Image/MyPhoto.png'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css'

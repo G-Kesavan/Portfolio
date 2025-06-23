@@ -4,7 +4,7 @@ import './Experience.css'
 const Experience = () => {
 
   return (
-    <section className='box'>
+    <section className='ExperiencePage'>
       ex
     </section>
   );

@@ -40,6 +40,7 @@
 .about p {
     font-size: calc(15px + 0.3vw);
 }
+
 .about h2 {
     font-size: calc(20px + 0.3vw);
     font-weight:700;

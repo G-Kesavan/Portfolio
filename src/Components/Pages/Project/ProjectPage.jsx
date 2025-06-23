@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import './ProjectPage.css'
+import './Project.css'
 
 const ProjectPage = () => {
   const scrollRef = useRef(null);
@@ -59,7 +59,7 @@ const ProjectPage = () => {
   ];
 
   return (
-    <section className='project-wrapper'>
+    <section className='ProjectPage'>
       <div className='glass-box'>
         <button className='scroll-btn scroll-left' onClick={() => scroll('left')}>&lt;</button>
         <div className='project-list' ref={scrollRef}>
