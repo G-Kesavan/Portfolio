@@ -1,9 +1,9 @@
 import React from 'react'
 import './Main.css'
-import Sidebar from '../Sidebar/Sidebar'
-import Content from '../Content/Content'
-import Navber from '../Navber/Navber'
-import Menu from '../Menu/Menu'
+import Sidebar from '../Sidebar/Sidebar.jsx'
+import Content from '../Content/Content.jsx'
+import Navber from '../Navber/Navber.jsx'
+import Menu from '../Menu/Menu.jsx'
 
 const Main = ({SetValue,value}) => {
   const showOption =()=>{

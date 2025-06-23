@@ -18,7 +18,7 @@
 .navbar ul {
     display: flex;
     gap: var(--gap-lg);
-    padding: 5px 20px 5px 20px;
+    padding: 8px 20px 8px 20px;
 }
 
 .navbar ul li {
@@ -33,11 +33,12 @@
 
 @media (max-width: 524px), (max-height: 524px) {
 .navbar {
+    height: auto;
+    display: none;
     position:fixed;
     bottom: 1.5rem;
     right:80px;
     background-color: rgb(87, 81, 81);
-    padding: 10px;
 
 }
 .navbar ul{

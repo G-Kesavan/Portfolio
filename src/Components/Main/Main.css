@@ -7,3 +7,15 @@ main{
     justify-content: center;
     position: relative;
 }
+
+@media (max-width: 524px), (max-height: 524px) {
+    main{
+        height: 182vh;
+      }
+}
+
+@media (max-height: 524px) {
+    main{
+      height: 235vh;
+    }
+  }

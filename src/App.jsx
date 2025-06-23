@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Main from './Components/Main/Main';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
+import Main from './Components/Main/Main.jsx';
+import Header from './Components/Header/Header.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 import { useState } from 'react';
 
 function App() {

@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Contact.css'
-import {db} from '../../../ContactApi'
+import {db} from '../../../ContactAPI.jsx'
 import { collection,addDoc } from 'firebase/firestore'
 import { IoLogoWhatsapp,IoLogoLinkedin,IoLocation,IoCopyOutline } from "react-icons/io5";
 import { FaPhone ,FaTelegram} from "react-icons/fa6";

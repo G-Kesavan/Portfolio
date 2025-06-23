@@ -1,19 +1,19 @@
 
 .app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: var(--height-full);
-  width: var(--width-full);
-  background-image: url(./Image/background_2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-li:hover {
-  transition: 0.4s;
-  background-color: var(--highlight-bg);
-  border-radius: var(--radius-xl);
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: var(--height-full);
+    width: var(--width-full);
+    background-image: url(./Image/background_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  li:hover {
+    transition: 0.4s;
+    background-color: var(--highlight-bg);
+    border-radius: var(--radius-xl);
+  }

@@ -13,3 +13,18 @@ header h1{
     padding-bottom: 5px;
     font-size: calc(28px + 0.3vw);
 }
+
+@media (max-width: 524px), (max-height: 524px) {
+  
+    header{
+      height: 8vh;
+    }
+  
+  }
+
+  @media (max-height: 524px) {
+    header{
+      height: 15vh;
+    }
+  
+  }

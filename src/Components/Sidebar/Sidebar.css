@@ -54,6 +54,7 @@
 
 @media (max-width: 524px), (max-height: 524px) {
 .sidebar {
+    display: none;
     height: auto;
     position:fixed;
     z-index: 200;
