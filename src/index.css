@@ -104,12 +104,12 @@
   
   @media (max-height: 524px) {
     body {
-      height: 260vh;
+      height: 300vh;
       width: var(--width-full);
     }
   
     #root {
-      height: 260vh;
+      height: 300vh;
       width: var(--width-full);
     } 
   }
