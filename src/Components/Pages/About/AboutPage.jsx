@@ -9,42 +9,42 @@ const About = () => {
         <img src={Photo} alt="Profile" />
       </div>
 
-      <div className="about-details">
-        <div className="about-item">
+      <ul className="about-details">
+        <li className="about-item " id='a-d-f-c'>
           <h3>Name</h3>
           <p>Kesava Perumal G</p>
-        </div>
+        </li>
 
-        <div className="about-item">
+        <li className="about-item">
           <h3>Qualification</h3>
           <p>BCA bachelor of Computer Application</p>
-        </div>
+        </li>
 
-        <div className="about-item">
+        <li className="about-item">
           <h3>Finishing Batch Year</h3>
           <p>2021 - 2024</p>
-        </div>
+        </li>
 
-        <div className="about-item">
+        <li className="about-item">
           <h3>Interests</h3>
           <p>Front-end Development, UI/UX Design, Responsive Web Design, JavaScript Animation</p>
-        </div>
+        </li>
 
-        <div className="about-item">
+        <li className="about-item">
           <h3>Current Work</h3>
           <p>Practicing ReactJS projects and learning advanced front-end frameworks. Working on a personal portfolio and contributing to open source.</p>
-        </div>
+        </li>
 
-        <div className="about-item">
+        <li className="about-item">
           <h3>Soft Skills</h3>
           <p>Problem Solving, Team Collaboration, Communication, Time Management</p>
-        </div>
+        </li>
 
-        <div className="about-item">
+        <li className="about-item" id='a-d-l-c'>
           <h3>Tools/Technologies</h3>
           <p>VS Code, GitHub, Figma, Netlify, Chrome DevTools</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   );
 };

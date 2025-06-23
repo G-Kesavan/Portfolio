@@ -45,11 +45,11 @@
 }
 
 .datials h2 {
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-normal);
 }
 
 .datials p {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-small);
   text-align: justify;
   margin: var(--gap-sm);
   overflow-y: scroll;

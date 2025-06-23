@@ -38,11 +38,11 @@
 }
 
 .about p {
-    font-size: calc(15px + 0.3vw);
+    font-size: var(--font-size-normal);
 }
 
 .about h2 {
-    font-size: calc(20px + 0.3vw);
+    font-size: var(--font-size-subHeading);
     font-weight:700;
 }
 
@@ -74,7 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(15px + 0.3vw);
+    font-size: var(--font-size-normal);
 }
 
 .language-box {
@@ -112,7 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(15px + 0.3vw);
+    font-size: var(--font-size-normal);
 }
 
 .skills {
@@ -133,7 +133,7 @@
     border-radius: var(--radius-md);
     border: 1px solid rgba(192, 190, 190, 0.51);
     text-align: center;
-    font-size: calc(11px + 0.3vw);
+    font-size: var(--font-size-small);
 }
 @media (max-width: 524px), (max-height: 524px) {
 

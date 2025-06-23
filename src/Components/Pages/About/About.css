@@ -8,6 +8,7 @@
   font-family: var(--font-family);
   overflow: hidden;
   grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .about-img {
@@ -36,7 +37,6 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  overflow: hidden;
   align-items: center;
   justify-content: space-evenly;
   background-color:  var(--background-dark);
@@ -44,33 +44,25 @@
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+#a-d-f-c{
+  padding-top: 10px;
+}
 
+#a-d-l-c{
+  padding-bottom: 10px;
 }
 
 .about-item{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 0px 20px 0px 20px;
   width: 90%;
 }
 
 .about-item h3 {
   margin: 0;
-  font-size: var(--font-size-medium);
-  color: var(--primary-color);
-}
-
-.about-item p {
-  margin: var(--gap-sm) 0 0 0;
-  color: var(--secondary-color);
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.about-item h3 {
-  margin: 0;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-normal);
   color: var(--primary-color);
 }
 
@@ -80,6 +72,7 @@
   font-size: var(--font-size-small);
   line-height: 1.5;
 }
+
 @media (max-width: 524px), (max-height: 524px)  {
   .AboutPage {
     flex-direction: column;

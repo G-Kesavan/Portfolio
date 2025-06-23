@@ -45,13 +45,14 @@
     border-radius: var(--input-radius);
     border: solid 1px var(--input-bg-color);
     padding-left: var(--input-padding);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-small);
     outline: none;
   }
   
   .inputcon label {
     margin-bottom: 6px;
     width: 90%;
+    
   }
   
   .message label {
@@ -81,7 +82,7 @@
     padding-top: var(--input-padding);
     overflow: hidden;
     outline: none;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-small);
   }
   
   .link {
@@ -124,7 +125,11 @@
     gap: 10px;
     height: 70%;
     width: 90%;
-    font-size: var(--font-size-contact);
+  }
+
+  .contact-details p{
+    font-size: var(--font-size-normal);
+    font-weight: 700;
   }
   
   .show-link {
@@ -134,10 +139,7 @@
     height: 70%;
     justify-content: space-evenly;
   }
-  .show-link :nth-child(2){
-    
-  }
-  .show-link :nth-child(2) p ::-webkit-scrollbar{
+  .show-link p ::-webkit-scrollbar{
   display: none;
   }
   
@@ -149,7 +151,7 @@
     height: auto;
     width: 100%;
     justify-content: space-between;
-    font-size: calc(16px + 0.5vw);
+
   }
   
   .show-link li p {
@@ -159,6 +161,8 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    font-size: var(--font-size-normal);
+    font-weight: unset;
   }
   @media (max-width: 524px), (max-height: 524px) {
     .ContactPage {

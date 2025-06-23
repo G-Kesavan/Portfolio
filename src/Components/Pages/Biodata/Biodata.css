@@ -7,7 +7,7 @@
     gap: var(--gap-md);
   }
   
-  .part1 {
+  .personal-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.4fr 1fr;
@@ -17,7 +17,7 @@
     overflow: hidden;
   }
   
-  .part1 .image {
+  .personal-details .image {
     height: 100%;
     width: 100%;
     display: flex;
@@ -30,7 +30,7 @@
     overflow: hidden;
   }
   
-  .part1 .image img {
+  .personal-details .image img {
     height: 92%;
     width: 90%;
     object-fit: cover;
@@ -39,7 +39,7 @@
     overflow: hidden;
   }
   
-  .detial {
+  .per-details {
     border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
@@ -50,14 +50,17 @@
     background-color: var(--background-dark);
   }
   
-  .detial p {
+  .per-details p {
     width: 90%;
     display: flex;
+    font-size: var(--font-size-small);
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   
-  .detial p label {
-    padding: var(--label-padding);
-    width: 25%;
+  .per-details p label {
+    width: 35%;
   }
   
   .point {
@@ -81,6 +84,7 @@
     gap: 2px;
     align-items: center;
     justify-content: start;
+    font-size: var(--font-size-small);
   }
   
   .point li label {
@@ -100,7 +104,7 @@
     gap: 10px;
   }
   
-  .part2 {
+  .education-details {
     display: flex;
     height: 100%;
     width: 100%;
@@ -116,25 +120,19 @@
     width: 90%;
     display: grid;
     position: relative;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   
-  .edu-detial {
+  .edu-details {
     width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 3px;
-  }
-  
-  .edu-detial::before {
-    height: var(--timeline-dot-size);
-    width: var(--timeline-dot-size);
-    background-color: white;
-    content: "";
-    border-radius: 50px;
-    position: absolute;
-    left: -6.5px;
-    border: var(--timeline-border);
+    padding-left: 15px;
   }
   
   .education-ul li::before {
@@ -144,7 +142,19 @@
     width: var(--timeline-line-width);
     background-color: white;
     border-radius: 60px 60px 0px 0px;
-    left: 0;
+    left: 5.5px;
+    top: 5px;
+  }
+
+  .education-ul li::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    left: 0px;
+    top: 5px;
+    height: var(--timeline-dot-size);
+    width: var(--timeline-dot-size);
+    border-radius: 50px;
   }
   
   .education-ul li {
@@ -160,9 +170,10 @@
     display: none;
   }
   
-  .edu-detial h4,
-  .edu-detial p {
+  .edu-details h4,
+  .edu-details p {
     padding-left: 10px;
+    font-size: var(--font-size-small);
   }
   
   @media (max-width: 524px), (max-height: 524px) {

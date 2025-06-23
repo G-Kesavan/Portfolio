@@ -28,9 +28,10 @@
   
     /* Fonts */
     --font-family: 'Segoe UI', sans-serif;
-    --font-size-base: 16px;
-    --font-size-small: 14px;
-    --font-size-medium: 18px;
+    --font-size-subHeading: calc(20px + 0.3vw);
+    --font-size-normal: calc(16px + 0.3vw);
+    --font-size-small: calc(12px + 0.3vw);
+    --font-size-medium: calc(14px + 0.3vw);
     --font-size-large: 24px;
     --font-size-contact: 18px;
   
