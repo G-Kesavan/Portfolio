@@ -11,19 +11,19 @@ import ExperiencePage from '../Pages/Experience/ExperiencePage.jsx'
 import CertificatePage from '../Pages/Certificate/CertificatePage.jsx'
 
 
-const Content = ({value}) => {
+const Content = ({Page,scrollTop}) => {
 
   return (
     <article className='Content'>
         <Heading/>
-        {value==='home' && <HomePage/>}
-        {value==='about' && <AboutPage/>}
-        {value==='contact' && <ContactPage/>}
-        {value==='biodata' && <BiodataPage/>}
-        {value==='project' && <ProjectPage/>}
-        {value==='skill' && <SkillPage/>}
-        {value==='experience' && <ExperiencePage/>}
-        {value==='certificate' && <CertificatePage/>}
+        {Page==='home' && <HomePage/>}
+        {Page==='about' && <AboutPage/>}
+        {Page==='contact' && <ContactPage/>}
+        {Page==='biodata' && <BiodataPage/>}
+        {Page==='project' && <ProjectPage/>}
+        {Page==='skill' && <SkillPage scrollTop={scrollTop}/>}
+        {Page==='experience' && <ExperiencePage/>}
+        {Page==='certificate' && <CertificatePage/>}
     </article>
   )
 }

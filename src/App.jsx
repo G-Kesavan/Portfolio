@@ -3,19 +3,30 @@ import './App.css';
 import Main from './Components/Main/Main.jsx';
 import Header from './Components/Header/Header.jsx';
 import Footer from './Components/Footer/Footer.jsx';
-import { useState } from 'react';
+import { useState,useRef } from 'react';
 
 function App() {
-  const [value, setvalue] = useState('home')
-  const SetValue =(v)=>{
-    setvalue(v)
+  const topRef = useRef(null);
+  const scrollTop = () => {
+    topRef.current.scrollIntoView({behavior:'smooth'})
+  }
+  const [heading, setHeading] = useState('My portfolio')
+  const [Page, setPage] = useState('home')
+  const setPageName =(name)=>{
+    setPage(name)
+    setHeading(name.charAt(0).toUpperCase()+name.slice(1))
+    scrollTop()
   }
   return (
     <div className="app">
-      <Header/>
+      <Header
+        topRef={topRef}
+        heading={heading}
+      />
       <Main
-        value={value}
-        SetValue={SetValue}
+        scrollTop={scrollTop}
+        Page={Page}
+        setPageName={setPageName}
       />
       <Footer/>
     </div>

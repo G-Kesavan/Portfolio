@@ -5,7 +5,7 @@ import Content from '../Content/Content.jsx'
 import Navber from '../Navber/Navber.jsx'
 import Menu from '../Menu/Menu.jsx'
 
-const Main = ({SetValue,value}) => {
+const Main = ({setPageName,Page,scrollTop}) => {
   const showOption =()=>{
         const navbar = document.getElementsByClassName('navbar')[0];
         navbar.style.display='flex'
@@ -21,14 +21,15 @@ const Main = ({SetValue,value}) => {
   return (
     <main>
         <Sidebar 
-          SetValue={SetValue}       
+          setPageName={setPageName}       
         />
         <Content
-          SetValue={SetValue}
-          value={value}
+          Page={Page}
+          scrollTop={scrollTop}
         />
         <Navber
-        SetValue={SetValue}/>
+          setPageName={setPageName}
+        />
         <Menu
           showOption={showOption}
           closeOption={closeOption}

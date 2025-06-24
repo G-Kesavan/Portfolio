@@ -6,14 +6,14 @@ import { FaPhone } from "react-icons/fa6";
 import { SiBiome } from "react-icons/si";
 
 
-const Sidebar = ({SetValue}) => {
+const Sidebar = ({setPageName}) => {
   return (
     <nav className='sidebar'>
       <ul>
-        <li onClick={()=>SetValue('home')}><FaHome />Home</li>
-        <li onClick={()=>SetValue('about')}><IoMdContact />About</li>
-        <li onClick={()=>SetValue('contact')}><FaPhone />Contact</li>
-        <li onClick={()=>SetValue('biodata')}><SiBiome />Biodata</li>
+        <li onClick={()=>setPageName('home')}><FaHome />Home</li>
+        <li onClick={()=>setPageName('about')}><IoMdContact />About</li>
+        <li onClick={()=>setPageName('contact')}><FaPhone />Contact</li>
+        <li onClick={()=>setPageName('biodata')}><SiBiome />Biodata</li>
       </ul>
     </nav>
   )

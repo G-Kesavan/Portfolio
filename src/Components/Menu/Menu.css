@@ -1,5 +1,6 @@
 .menu{
     display: none;
+    z-index: 50;
 }
 .showMenu{
     display: flex;

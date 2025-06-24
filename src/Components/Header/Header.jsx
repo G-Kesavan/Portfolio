@@ -1,10 +1,11 @@
 import React from 'react'
 import './Header.css'
 
-const Header = () => {
+const Header = ({heading ,topRef}) => {
+
   return (
-    <header>
-        <h1>My portfolio</h1>
+    <header ref={topRef}>
+        <h1>{heading}</h1>
     </header>
     
   )

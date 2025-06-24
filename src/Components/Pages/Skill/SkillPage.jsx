@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState  ,useRef } from 'react';
 import './SkillPage.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -6,10 +6,9 @@ import { IoLogoHtml5 ,IoLogoCss3,IoLogoJavascript,IoLogoReact,IoLogoGithub} from
 import { SiMongodb,SiMongoose,SiOracle} from "react-icons/si";
 
 
-
 const skillDetails = {
   HTML: {
-    icon: <IoLogoHtml5 size={40} />,
+    icon: <IoLogoHtml5 size={40}/>,
     percentage: 81,
     description: 'Semantic tag structure (header, main, footer, section, article, etc.). Form input validation. Table element usage. Media tag embedding. Anchor image linking. Responsive layout design.',
   },
@@ -50,12 +49,13 @@ const skillDetails = {
   },
 };
 
+const Skill = ({scrollTop}) => {
 
-const Skill = () => {
   const [currentSkill, setCurrentSkill] = useState('HTML');
 
   const handleSkillChange = (skill) => {
     setCurrentSkill(skill);
+    scrollTop();
   };
 
   const { percentage, description } = skillDetails[currentSkill];
@@ -73,7 +73,8 @@ const Skill = () => {
               textColor: 'white',
               trailColor: 'white',
               textSize: '16px',
-              pathTransitionDuration: 0.8,
+              pathTransitionDuration: 3,
+              pathTransition:'0.8s 0.5s'
             })}
           />
         </div>

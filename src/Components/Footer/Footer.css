@@ -4,7 +4,15 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
     margin-top: 10vh;
     bottom: 0;
+    z-index: 1000;
+    background-color: rgb(46, 32, 32);
+}
+
+@media (max-width: 524px), (max-height: 524px) {
+    footer{
+        margin-top: 5vh;
+        height: 20vh;
+    }
 }
