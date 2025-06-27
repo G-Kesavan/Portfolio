@@ -16,3 +16,10 @@ footer{
         height: 20vh;
     }
 }
+
+@media (max-height: 524px) {
+    footer{
+        margin-top: 0vh;
+        height: 30vh;
+    }
+}
