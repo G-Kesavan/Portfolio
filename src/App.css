@@ -5,7 +5,7 @@
     align-items: center;
     height: var(--height-full);
     width: var(--width-full);
-    background-image: url(./Image/background_2.jpg);
+    background-image: url(/Background/background_2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
