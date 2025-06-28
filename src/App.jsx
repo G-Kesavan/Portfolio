@@ -28,7 +28,9 @@ function App() {
         Page={Page}
         setPageName={setPageName}
       />
-      <Footer/>
+      <Footer
+        setPageName={setPageName}
+      />
     </div>
   );
 }

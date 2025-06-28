@@ -1,6 +1,6 @@
 import React from 'react';
 import './Biodata.css';
-import Photo from '/Image/MyPhoto.png';
+import Photo from '/Images/MyPhotos/MyPhoto.png';
 
 const Biodata = () => {
   return (
