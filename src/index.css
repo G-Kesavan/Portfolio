@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 :root {
     /* Colors */
     --primary-color: #ebf6f6;
@@ -27,7 +28,7 @@
     --input-radius: 10px;
   
     /* Fonts */
-    --font-family: 'Segoe UI', sans-serif;
+    --font-family: 'Quicksand','Segoe UI';
     --font-size-subHeading: calc(20px + 0.3vw);
     --font-size-normal: calc(16px + 0.3vw);
     --font-size-small: calc(12px + 0.3vw);

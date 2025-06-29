@@ -116,6 +116,12 @@
     justify-content: center;
     
   }
+
+  .touch-link li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .contact-details {
     display: flex;

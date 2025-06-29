@@ -4,6 +4,7 @@ header{
     align-items: center;
     justify-content: center;
     display: flex;
+    --font-family: 'Segoe UI';
 }
 header h1{
     display: flex;

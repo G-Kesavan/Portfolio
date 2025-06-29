@@ -1,7 +1,8 @@
 import React from 'react'
 import './Footer.css'
-import {  FaLinkedin, FaPhone, FaWhatsapp } from 'react-icons/fa'
+import {  FaLinkedin, FaPhone } from 'react-icons/fa6'
 import { SiGmail } from 'react-icons/si';
+import { IoLogoWhatsapp } from 'react-icons/io5';
 
 const Footer = ({setPageName}) => {
 
@@ -10,10 +11,10 @@ const Footer = ({setPageName}) => {
   return (
     <footer>
       <div className='footerLink'>
-        <a href=''><SiGmail/></a>
-        <a href=''><FaWhatsapp/></a>
-        <a href=''><FaPhone/></a>
-        <a href=''><FaLinkedin/></a>
+        <a href="mailto:mr.kesavaperumal@gmail.com "><SiGmail/></a>
+        <a href='https://wa.me/6374790292'><IoLogoWhatsapp/></a>
+        <a href='tel:+916374790292'><FaPhone/></a>
+        <a href='https://www.linkedin.com/in/kesavan-bca?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'><FaLinkedin/></a>
       </div>
       <nav className='footerMenu'>
         <ul>

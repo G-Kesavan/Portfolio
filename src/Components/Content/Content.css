@@ -40,6 +40,7 @@
 .message h2 {
     display: flex;
     font-size: calc(22px + 0.3vw);
+    
 }
 
 .message h5 {

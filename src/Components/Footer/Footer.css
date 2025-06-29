@@ -2,44 +2,88 @@ footer{
     height: 10vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: start;
+    flex-flow: row wrap;
     justify-content: center;
     margin-top: 10vh;
     z-index: 1000;
     background-color:rgb(29, 25, 25);
-    gap: 5px;
+    overflow: hidden;
+    gap: -30px;
 }
 
 footer .footerLink{
     display: flex;
+    flex-grow: 1;
     gap: 10px;
-    font-size: calc(23px + 0.3vw);
+    font-size: 160%;
+    justify-content: end;
+    line-height:0px;
+    align-items: center;
+    padding-right: 20px;
+    height: 60%;
 }
 
 footer .footerMenu{
     display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content:start;
+    padding-left: 20px;
+    height: 60%;
 }
 
 footer .footerMenu ul{
     display: flex;
     gap: 10px;
+    height: auto;
+    width: auto;
 }
 
 footer .footerText{
     display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    flex-grow: 2;
+    height: 40%;
 }
 
 @media (max-width: 524px), (max-height: 524px) {
     footer{
-        margin-top: 5vh;
-        height: 20vh;
+        margin-top: 2vh;
+        height: 18vh;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    footer .footerMenu{
+        flex-grow: 0;
+        height: auto;
+        width: 100%;
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footerLink{
+        flex-grow: 0;
+        height: auto;
+        width: 100%;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footerText{
+        flex-grow: 0;
+        height: auto;
     }
 }
 
 @media (max-height: 524px) {
     footer{
-        margin-top: 0vh;
-        height: 30vh;
+        margin-top: 2vh;
+        height: 28vh;
     }
 }

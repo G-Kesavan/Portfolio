@@ -64,10 +64,10 @@ const Contact = () => {
           </ul>
         </div>
         <ul className='touch-link'>
-          <li><IoLogoWhatsapp /></li>
-          <li><FaPhone /></li>
-          <li><IoLogoLinkedin /></li>
-          <li><FaTelegram/></li>
+          <li ><a href='https://wa.me/6374790292'><IoLogoWhatsapp /></a></li>
+          <li><a href='tel:+916374790292'><FaPhone /></a></li>
+          <li><a href='https://www.linkedin.com/in/kesavan-bca?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'><IoLogoLinkedin /></a></li>
+          <li><a href='https://t.me/KESAVAN420BOY'><FaTelegram/></a></li>
         </ul>
       </div>
     </section>
