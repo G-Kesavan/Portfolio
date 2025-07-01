@@ -93,7 +93,7 @@ const Certificate = () => {
           <button className='closeBtn'onClick={()=>closeImage(certificate.key)}>X</button>
           <img src={certificate.image} alt='certificate' onClick={()=>openImage(certificate.key)}/>
           <div className='datials'>
-            <h2>{certificate.name}</h2>
+            <h3>{certificate.name}</h3>
             <p>{certificate.detail}</p>
           </div>
         </div>

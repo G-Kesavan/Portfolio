@@ -7,7 +7,7 @@
     width: 3.5rem;
     height: 3.5rem;
     color: white;
-    background-color: var(--background-dark);
+    background-color: rgb(14, 13, 13);
     border-radius: 50%;
     align-items: center;
     justify-content: center;

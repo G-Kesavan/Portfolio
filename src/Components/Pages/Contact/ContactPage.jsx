@@ -55,7 +55,7 @@ const Contact = () => {
       </form>
       <div className='link'>
         <div className='contact-details'>
-          <p>Get in touch with us for inquiries, support, or feedback.We're here to hel you every step of the way....</p>
+          <strong>Get in touch with us for inquiries, support, or feedback.We're here to hel you every step of the way....</strong>
           <ul className='show-link'>
             <li><FaUserEdit/><p>Kesava Perumal G</p><IoCopyOutline/></li>
             <li><SiGmail/><p>mr.kesavaperumal@gmail.com</p><IoCopyOutline/></li>

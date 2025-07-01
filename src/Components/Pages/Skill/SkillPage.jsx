@@ -10,7 +10,7 @@ const skillDetails = {
   HTML: {
     icon: <IoLogoHtml5 size={40}/>,
     percentage: 81,
-    description: 'Semantic tag structure (header, main, footer, section, article, etc.). Form input validation. Table element usage. Media tag embedding. Anchor image linking. Responsive layout design.',
+    description: 'Semantic tag structure header, main, footer, section, article, etc. Form input validation. Table element usage. Media tag embedding. Anchor image linking. Responsive layout design.',
   },
   CSS: {
     icon: <IoLogoCss3 size={40} />,
@@ -63,7 +63,7 @@ const Skill = ({scrollTop}) => {
   return (
     <section className='SkillPage'>
       <div className='AboutSkill'>
-        <h1>{currentSkill}</h1>
+        <h2>{currentSkill}</h2>
         <div className='skill-bar'>
           <CircularProgressbar
             value={percentage}
@@ -87,7 +87,7 @@ const Skill = ({scrollTop}) => {
           return (
             <li key={skill} onClick={() => handleSkillChange(skill)}>
               <div className='icon-con'>{icon}</div>
-              <h3>{skill.toUpperCase()}</h3>
+              <h2>{skill.toUpperCase()}</h2>
             </li>
           );
           })}

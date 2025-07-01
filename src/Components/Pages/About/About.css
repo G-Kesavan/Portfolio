@@ -35,8 +35,6 @@
 .about-details {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   align-items: center;
   justify-content: space-evenly;
   background-color:  var(--background-dark);
@@ -44,13 +42,16 @@
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+
 }
 #a-d-f-c{
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 #a-d-l-c{
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .about-item{
@@ -61,16 +62,14 @@
 }
 
 .about-item h3 {
-  margin: 0;
   font-size: var(--font-size-normal);
+  font-weight: 500;
   color: var(--primary-color);
 }
 
 .about-item p {
-  margin: var(--gap-sm) 0 0 0;
-  color: var(--secondary-color);
   font-size: var(--font-size-small);
-  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 524px), (max-height: 524px)  {

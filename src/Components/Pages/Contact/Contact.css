@@ -13,17 +13,22 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--form-bg-color);
+    background-color: var(--background-dark);
     border-radius: var(--form-radius);
     align-items: center;
     justify-content: center;
     gap: 6px;
   }
+
+  .contactForm h2{
+    font-weight: 600;
+  }
   
   .formBtn {
     width: 25%;
     height: 8%;
-    color: var(--input-text-color);
+    color:rgba(0, 0, 0, 0.911);
+    font-weight: 600;
     border-radius: 20px;
     border: solid transparent 1px;
   }
@@ -52,12 +57,15 @@
   .inputcon label {
     margin-bottom: 6px;
     width: 90%;
-    
+    font-size: var(--font-size-normal);
+    font-weight: 400;
   }
   
   .message label {
     margin-bottom: 6px;
     width: 90%;
+    font-size: var(--font-size-normal);
+    font-weight: 400;
   }
   
   .ContactPage .message {
@@ -88,7 +96,7 @@
   .link {
     height: 100%;
     width: 100%;
-    background-color: var(--form-bg-color);
+    background-color: var(--background-dark);
     border-radius: var(--form-radius);
     display: flex;
     flex-direction: column;
@@ -133,9 +141,10 @@
     width: 90%;
   }
 
-  .contact-details p{
+  .contact-details strong{
     font-size: var(--font-size-normal);
-    font-weight: 700;
+    font-weight: 500;
+    color: var(--font-heading);
   }
   
   .show-link {
@@ -151,7 +160,6 @@
   
   .show-link li {
     display: flex;
-    font-size: var(--font-size-large);
     gap: var(--input-padding);
     align-items: center;
     height: auto;

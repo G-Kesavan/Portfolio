@@ -7,14 +7,13 @@
 
 .certificates {
   display: flex;
-
   height: var(--height-full);
   width: var(--width-full);
 
 }
 
 .certificate {
-  flex: 0 0 29%;
+  flex: 0 0 30%;
   background-color: var(--background-dark);
   border-radius: var(--radius-md);
   padding: var(--gap-md);
@@ -29,7 +28,7 @@
 .embla img {
   height: 50%;
   width: var(--width-full);
-  border-radius: var(--radius-sm);
+  border-radius: 10px;
 }
 
 .datials {
@@ -37,11 +36,11 @@
   width: var(--width-full);
   display: flex;
   flex-direction: column;
-  gap: var(--gap-md);
 }
 
-.datials h2 {
+.datials h3 {
   font-size: var(--font-size-normal);
+  font-weight: 500;
 }
 
 .datials p {
@@ -62,6 +61,8 @@
   border-radius: 50%;
   background-color: var(--button-bg);
   border: var(--button-border);
+  align-items: center;
+  justify-content: center;
   display: none;
 }
 @media (max-width: 524px), (max-height: 524px) {

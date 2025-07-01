@@ -1,6 +1,6 @@
 
 .navbar {
-    height: 8%;
+    height: 9%;
     width: auto;
     position:absolute;
     display: flex;
@@ -9,8 +9,9 @@
     border-radius: var(--radius-xl);
     background-color: var(--navbar-color);
     backdrop-filter: var(--backdrop-blur-heavy);
-    box-shadow: var(--box-shadow);
-    bottom:-5%;   
+    box-shadow: var(--nav-box-shadow);
+    bottom:0%;   
+    transform: translateY(65%) translateX(10%);
     overflow: hidden;
     animation: navMenu 0.3s ease-in-out;
 }
@@ -18,13 +19,16 @@
 .navbar ul {
     display: flex;
     gap: var(--gap-lg);
-    padding: 8px 20px 8px 20px;
+    padding: 10px 20px 10px 20px;
 }
 
-.navbar ul li {
+.navbar ul li a{
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--font-size-small);
+    font-weight: 300;
 }
 
 @media (max-width: 824px) {
@@ -38,17 +42,15 @@
     position:fixed;
     bottom: 1.5rem;
     right:80px;
-    background-color: rgb(87, 81, 81);
-
+    transform: translateY(0%) translateX(0%);
+    border: 0.3px rgba(110, 110, 109, 0.767) solid;
 }
 .navbar ul{
     gap: var(--gap-md);
 }
-
-.navbar ul li {
-    font-size:small;
+.navbar ul li a{
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 }
 

@@ -28,7 +28,7 @@ const ViButtonClick = () => {
     <section className='heading'>
         <div className='message'>
           <h2>Welcome to my portfolio</h2>
-          <h5>Excited to share my journey...</h5>
+          <h4>Excited to share my journey...</h4>
         </div>
         <div className='resume'>
           <ul>

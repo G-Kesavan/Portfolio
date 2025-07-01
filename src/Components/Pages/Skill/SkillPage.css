@@ -21,13 +21,14 @@
     overflow: hidden;
 }
 
-.AboutSkill h1 {
+.AboutSkill h2 {
     width: var(--width-full);
     height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: var(--font-size-subHeading);
+    font-weight: 600;
 }
 
 .skill-bar {
@@ -41,9 +42,9 @@
 
 .AboutSkill p {
     width: 90%;
-    height: 43%;
+    height: 40%;
     text-align: center;
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-normal);
     overflow: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -58,6 +59,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: var(--gap-lg);
+    height: 100%;
+    width: 100%;
 }
 
 .MySkills ul li {
@@ -70,17 +73,19 @@
     height: var(--height-full);
     width: var(--width-full);
     gap: var(--gap-md);
+    height: 100%;
+    width: 100%;
 }
 
 .icon-con {
     height: 30%;
     width: auto;
-
 }
 
-.MySkills ul li h3 {
+.MySkills ul li h2 {
     font-size: var(--font-size-normal);
     height: auto;
+    font-weight: 600;
 }
 
 @media (max-width: 524px), (max-height: 524px) {

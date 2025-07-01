@@ -1,7 +1,6 @@
 import React from 'react'
 import './Menu.css'
-import { BsFillMenuButtonWideFill } from "react-icons/bs";
-import { IoClose } from "react-icons/io5";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 const Menu = ({showOption,closeOption}) => {
     const showMenu =()=>{
@@ -20,8 +19,8 @@ const Menu = ({showOption,closeOption}) => {
     }
   return (
     <div className='menu'>  
-        <button className='showMenu' onClick={()=>showMenu()}><BsFillMenuButtonWideFill
-        fontSize='35px' fontWeight='700'/></button>
+        <button className='showMenu' onClick={()=>showMenu()}><IoMenu
+        fontSize='35px' fontWeight='900'/></button>
         <button className='closeMenu' onClick={()=>closeMenu()}><IoClose fontSize='35px' fontWeight='700' /></button>
     </div>
   )

@@ -20,6 +20,7 @@ const ProjectPage = () => {
       desc: 'Built a Netflix-like UI with ReactJS featuring dynamic content display.',
       img: '/Images/Project/AI_Foundations_Associate_1.jpg',
       link: 'https://your-netflix-clone-link.com',
+      code: 'https://your-netflix-clone-link.com',
     },
     {
       title: 'Portfolio (ReactJS)',
@@ -27,6 +28,7 @@ const ProjectPage = () => {
       desc: 'Created a responsive personal portfolio with project showcase.',
       img: '/Images/Project/AI_Foundations_Associate_1.jpg',
       link: 'https://your-react-portfolio-link.com',
+      code: 'https://your-netflix-clone-link.com',
     },
     {
       title: 'To-Do List',
@@ -34,6 +36,7 @@ const ProjectPage = () => {
       desc: 'Developed a to-do list app with add, delete, and status toggle functions.',
       img: '/Images/Project/AI_Foundations_Associate_1.jpg',
       link: 'https://your-todo-list-link.com',
+      code: 'https://your-netflix-clone-link.com',
     },
     {
       title: 'Shopping Landing Page',
@@ -41,6 +44,7 @@ const ProjectPage = () => {
       desc: 'Designed a static shopping page layout with modern responsive design.',
       img: '/Images/Project/AI_Foundations_Associate_1.jpg',
       link: 'https://your-shopping-page-link.com',
+      code: 'https://your-netflix-clone-link.com',
     },
     {
       title: 'Portfolio (HTML & CSS)',
@@ -48,6 +52,7 @@ const ProjectPage = () => {
       desc: 'Built a simple personal portfolio using pure HTML and CSS.',
       img: '/Images/Project/AI_Foundations_Associate_1.jpg',
       link: 'https://your-html-portfolio-link.com',
+      code: 'https://your-netflix-clone-link.com',
     },
     {
       title: 'Calculator',
@@ -55,6 +60,7 @@ const ProjectPage = () => {
       desc: 'Built a functional calculator with basic operations using JavaScript.',
       img: '/Images/Project/AI_Foundations_Associate_1.jpg',
       link: 'https://your-calculator-link.com',
+      code: 'https://your-netflix-clone-link.com',
     },
   ];
 
@@ -67,10 +73,11 @@ const ProjectPage = () => {
             <div className='project-item' key={index}>
               <img src={project.img} alt={project.title} className='project-img' />
               <div className='project-content'>
-                <strong>{project.title}</strong><br />
-                <span className='tech'>Tech Used:</span> {project.tech}<br />
-                <span>{project.desc}</span><br />
-                <a href={project.link} target='_blank' rel='noreferrer' className='project-link'>🔗 View Project</a>
+                <h3>{project.title}</h3>
+                <label>Tech Used :</label><p className='tech'>&nbsp;{project.tech}</p>
+                <p className='detial'>{project.desc}</p>
+                <a href={project.link} target='_blank' rel='noreferrer' className='project-link'>🔗 Project : View</a>
+                <a href={project.code} target='_blank' rel='noreferrer' className='project-link'>&nbsp;Code</a>
               </div>
             </div>
           ))}

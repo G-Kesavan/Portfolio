@@ -6,31 +6,26 @@ footer{
     flex-flow: row wrap;
     justify-content: center;
     margin-top: 10vh;
-    z-index: 1000;
     background-color:rgb(29, 25, 25);
     overflow: hidden;
-    gap: -30px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 footer .footerLink{
     display: flex;
-    flex-grow: 1;
     gap: 10px;
-    font-size: 160%;
-    justify-content: end;
-    line-height:0px;
     align-items: center;
-    padding-right: 20px;
-    height: 60%;
+    justify-content: center;
+}
+
+footer .footerLink a{
+    font-size: 250%;
+    line-height:0px;
 }
 
 footer .footerMenu{
     display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content:start;
-    padding-left: 20px;
-    height: 60%;
 }
 
 footer .footerMenu ul{
@@ -40,13 +35,14 @@ footer .footerMenu ul{
     width: auto;
 }
 
+footer .footerMenu ul li a{
+    text-decoration: none;
+}
+
 footer .footerText{
     display: flex;
-    width: 100%;
     align-items: start;
     justify-content: center;
-    flex-grow: 2;
-    height: 40%;
 }
 
 @media (max-width: 524px), (max-height: 524px) {
@@ -54,7 +50,7 @@ footer .footerText{
         margin-top: 2vh;
         height: 18vh;
         flex-direction: column;
-        gap: 5px;
+        gap: 3px;
     }
 
     footer .footerMenu{

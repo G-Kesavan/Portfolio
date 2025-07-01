@@ -9,21 +9,24 @@ import ProjectPage from '../Pages/Project/ProjectPage.jsx'
 import SkillPage from '../Pages/Skill/SkillPage.jsx'
 import ExperiencePage from '../Pages/Experience/ExperiencePage.jsx'
 import CertificatePage from '../Pages/Certificate/CertificatePage.jsx'
+import { Route,Routes} from 'react-router-dom'
 
 
-const Content = ({Page,scrollTop}) => {
+const Content = ({scrollTop}) => {
 
   return (
     <article className='Content'>
         <Heading/>
-        {Page==='home' && <HomePage/>}
-        {Page==='about' && <AboutPage/>}
-        {Page==='contact' && <ContactPage/>}
-        {Page==='biodata' && <BiodataPage/>}
-        {Page==='project' && <ProjectPage/>}
-        {Page==='skill' && <SkillPage scrollTop={scrollTop}/>}
-        {Page==='experience' && <ExperiencePage/>}
-        {Page==='certificate' && <CertificatePage/>}
+          <Routes >
+            <Route index element={<HomePage/>}/>
+            <Route path='about' element={<AboutPage/>}/>
+            <Route path='contact' element={<ContactPage/>}/>
+            <Route path='biodata' element={<BiodataPage/>}/>
+            <Route path='project' element={<ProjectPage/>}/>
+            <Route path='skill' element={<SkillPage scrollTop={scrollTop}/>}/>
+            <Route path='experience' element={<ExperiencePage/>}/>
+            <Route path='certificate' element={<CertificatePage/>}/>
+          </Routes>
     </article>
   )
 }

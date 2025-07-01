@@ -40,12 +40,16 @@
 .message h2 {
     display: flex;
     font-size: calc(22px + 0.3vw);
-    
+    line-height:101%;
+    font-weight: 600;
+    overflow: hidden;
 }
 
-.message h5 {
+.message h4 {
     font-size: calc(16px + 0.3vw);
-    font-weight:500;
+    line-height: 100%;
+    font-weight:400;
+    margin-top: 6px;
 }
 
 .resume {
@@ -77,6 +81,11 @@
     padding: 0px 5px 0px 5px;
     align-items: center;
     justify-content: center;
+    font-weight: 300;
+}
+
+.resum-text{
+    font-weight: 300;
 }
 @media (max-width: 1024px) {
     .Content {

@@ -6,7 +6,7 @@
     justify-content: flex-start;
     padding-right: 2rem;
     animation: sideMenu 0.3s ease-in-out;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .sidebar ul {
@@ -18,20 +18,27 @@
     width: auto;
     border-radius: var(--radius-xl);
     background-color: var(--navbar-color);
-    backdrop-filter: var(--backdrop-blur-light);
-    box-shadow: var(--box-shadow);
-    padding: 10px 5px 10px 5px;
+    backdrop-filter: var(--backdrop-blur-heavy);
+    box-shadow: var(--nav-box-shadow);
+    padding: 10px 3px 10px 3px;
+    overflow: hidden;
 }
 .sidebar ul li {
+   height: 25%;
+   width: 100%;
+}
+.sidebar ul li a{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: small;
     gap:2px;
-    height: 25%;
     width: var(--width-full);
     padding: 8px 0px 8px 0px;
+    list-style: none;
+    font-weight: 300;
 }
 
 @keyframes sideMenu {
@@ -67,6 +74,7 @@
 
 .sidebar ul {
 padding: 15px 5px 20px 5px;
+border: 0.3px rgba(158, 157, 156, 0.767) solid;
 }
 
 }

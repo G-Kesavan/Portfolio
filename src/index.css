@@ -1,25 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     /* Colors */
     --primary-color: #ebf6f6;
-    --secondary-color: #ccc;
-    --font-color: aliceblue;
+    --font-heading-color:rgb(255, 255, 255);
+    --font-color:rgba(255, 255, 255, 0.932);
     --background-dark: rgba(36, 35, 35, 0.849);
-    --background-dark-strong: rgba(36, 35, 35, 0.927);
-    --background-semi-dark: rgba(90, 90, 90, 0.253);
-    --navbar-color: rgba(105, 98, 98, 0.74);
-    --highlight-bg: #c6c1c1bd;
-    --project-hover: rgba(36, 35, 35, 0.768);
+    --background-full-dark: rgba(0, 0, 0, 0.356);
+    --navbar-color: rgba(48, 43, 43, 0.699);
     --touch-icon-bg: rgb(53, 49, 49);
+    --background-semi-dark: rgba(90, 90, 90, 0.212);
+
   
     /* Shadows and Blur */
     --box-shadow: 0px 0px 2px rgba(177, 176, 176, 0.938);
-    --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    --nav-box-shadow: 0px 0px 2px  rgba(168, 158, 158, 0.938);
     --backdrop-blur-light: blur(10px);
     --backdrop-blur-heavy: blur(50px);
   
     /* Border Radius */
-    --radius-sm: 10px;
     --radius-md: 20px;
     --radius-lg: 30px;
     --radius-xl: 3rem;
@@ -28,13 +26,11 @@
     --input-radius: 10px;
   
     /* Fonts */
-    --font-family: 'Quicksand','Segoe UI';
+    --font-family: 'Poppins';
     --font-size-subHeading: calc(20px + 0.3vw);
-    --font-size-normal: calc(16px + 0.3vw);
+    --font-size-normal: calc(15px + 0.3vw);
     --font-size-small: calc(12px + 0.3vw);
     --font-size-medium: calc(14px + 0.3vw);
-    --font-size-large: 24px;
-    --font-size-contact: 18px;
   
     /* Layout & Spacing */
     --width-full: 100%;
@@ -75,6 +71,13 @@
     list-style: none;
     color: var(--font-color);
     font-family: var(--font-family);
+    text-decoration: none;
+    line-height: 130%;
+    font-weight:200;
+  }
+
+  h1,h2,h3,h4,h5,h6,strong{
+    color: var(--font-heading-color);
   }
   
   body {

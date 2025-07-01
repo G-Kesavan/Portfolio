@@ -23,10 +23,10 @@ const HomePage = () => {
       </div>
 
       <div className='skills'>
-        <div className='skill'>Skills Count : 8+</div>
-        <div className='skill'>Project Count : 5</div>
-        <div className='skill'>Certifications : 6</div>
-        <div className='skill'>Problam solving : 0</div>
+        <div className='skill'><p>Skills Count : 8+</p></div>
+        <div className='skill'><p>Project Count : 5</p></div>
+        <div className='skill'><p>Certifications : 6</p></div>
+        <div className='skill'><p>Problam solving : 0</p></div>
       </div>
 
       <div className='language-box'>

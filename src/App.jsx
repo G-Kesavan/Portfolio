@@ -11,9 +11,7 @@ function App() {
     topRef.current.scrollIntoView({behavior:'smooth'})
   }
   const [heading, setHeading] = useState('My portfolio')
-  const [Page, setPage] = useState('home')
   const setPageName =(name)=>{
-    setPage(name)
     setHeading(name.charAt(0).toUpperCase()+name.slice(1))
     scrollTop()
   }
@@ -25,7 +23,6 @@ function App() {
       />
       <Main
         scrollTop={scrollTop}
-        Page={Page}
         setPageName={setPageName}
       />
       <Footer
