@@ -40,12 +40,12 @@
 .message h2 {
     display: flex;
     font-size: calc(22px + 0.3vw);
-    line-height:101%;
+    line-height:105%;
     font-weight: 600;
     overflow: hidden;
 }
 
-.message h4 {
+marquee {
     font-size: calc(16px + 0.3vw);
     line-height: 100%;
     font-weight:400;
@@ -76,16 +76,33 @@
 
 .resume ul li {
     display: flex;
-    font-size: calc(11px + 0.3vw);
-    cursor:pointer;
+    font-size: var(--font-size-small);
     padding: 0px 5px 0px 5px;
     align-items: center;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 100%;
+}
+  
+.resume ul :nth-child(3):hover{
+    background-color: rgb(107, 114, 114);
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.resume ul :nth-child(2):hover{
+    background-color: rgb(107, 114, 114);
+    border-radius: 10px;
+    cursor:pointer;
 }
 
 .resum-text{
-    font-weight: 300;
+    font-weight: 400;
+    font-size: var(--font-size-small);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    line-height: 100%;
 }
 @media (max-width: 1024px) {
     .Content {

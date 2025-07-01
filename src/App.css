@@ -3,11 +3,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: var(--height-full);
+    height: 110vh;
     width: var(--width-full);
-    background-image: url(/Images/Background/background_2.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: transparent;
     background-repeat: no-repeat;
-    position: relative;
+  }
+
+  @media (max-width: 524px), (max-height: 524px) {
+    .app {
+      height: 210vh;
+      width: var(--width-full);
+    }
+  }
+  
+  @media (max-height: 524px) {
+  
+    .app {
+      height: 310vh;
+      width: var(--width-full);
+    } 
   }

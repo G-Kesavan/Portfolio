@@ -178,6 +178,13 @@
     font-size: var(--font-size-normal);
     font-weight: unset;
   }
+
+  .iconHover:hover{
+    background-color: rgb(107, 114, 114);
+    border-radius: 20px;
+    cursor:pointer;
+    padding: 5px;
+  }
   @media (max-width: 524px), (max-height: 524px) {
     .ContactPage {
       grid-template-columns: 1fr;

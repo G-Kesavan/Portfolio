@@ -1,6 +1,6 @@
 import React from 'react'
+import {  GiEyeTarget } from 'react-icons/gi';
 import { IoMdDownload  } from "react-icons/io";
-import { MdOutlinePageview } from "react-icons/md";
 
 const Heading = () => {
 
@@ -28,13 +28,13 @@ const ViButtonClick = () => {
     <section className='heading'>
         <div className='message'>
           <h2>Welcome to my portfolio</h2>
-          <h4>Excited to share my journey...</h4>
+          <marquee>Excited to share my journey...</marquee>
         </div>
         <div className='resume'>
           <ul>
             <li >RESUME</li>
-            <li onClick={ViButtonClick}><p className='resum-text'>VIEW</p>&nbsp;<MdOutlinePageview fontSize='20px'/></li>
-            <li onClick={DoButtonClick}><p className='resum-text'>DOWNLOAD</p>&nbsp;<IoMdDownload fontSize='18px' /></li>
+            <li onClick={ViButtonClick}><p className='resum-text'>VIEW&nbsp;</p><GiEyeTarget fontSize='18px'/></li>
+            <li onClick={DoButtonClick}><p className='resum-text'>DOWNLOAD&nbsp;</p><IoMdDownload fontSize='18px' /></li>
           </ul>
         </div>
     </section>

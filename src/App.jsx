@@ -4,6 +4,7 @@ import Main from './Components/Main/Main.jsx';
 import Header from './Components/Header/Header.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import { useState,useRef } from 'react';
+import Background from './Background/Background3D.jsx';
 
 function App() {
   const topRef = useRef(null);
@@ -17,6 +18,7 @@ function App() {
   }
   return (
     <div className="app">
+      <Background/>
       <Header
         topRef={topRef}
         heading={heading}
