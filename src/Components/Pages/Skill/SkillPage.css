@@ -77,6 +77,10 @@
     width: 100%;
 }
 
+.MySkills ul :hover{
+    transform: scale(1.1);
+}
+
 .icon-con {
     height: 30%;
     width: auto;

@@ -27,12 +27,17 @@
   .formBtn {
     width: 25%;
     height: 8%;
-    color:rgba(0, 0, 0, 0.911);
     font-weight: 600;
     border-radius: 20px;
-    border: solid transparent 1px;
+    border: solid black 1px ;
+    background-color:rgb(107, 114, 114);
+    color: rgb(27, 27, 27);
   }
-  
+  .formBtn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
   .inputcon {
     display: flex;
     flex-direction: column;
@@ -48,10 +53,12 @@
     width: 90%;
     height: 60%;
     border-radius: var(--input-radius);
-    border: solid 1px var(--input-bg-color);
+    border: 1px solid var(--input-bg-color);
     padding-left: var(--input-padding);
     font-size: var(--font-size-small);
     outline: none;
+    background-color:  rgba(219, 228, 228, 0.952);
+    font-weight: 400;
   }
   
   .inputcon label {
@@ -91,6 +98,8 @@
     overflow: hidden;
     outline: none;
     font-size: var(--font-size-small);
+    background-color:  rgba(219, 228, 228, 0.952);
+    font-weight: 400;
   }
   
   .link {
@@ -123,6 +132,12 @@
     align-items: center;
     justify-content: center;
     
+  }
+
+  .touch-link :hover {
+    transform:scale(1.05);
+    transition: 0.3s  linear;
+    transition-timing-function: 1;
   }
 
   .touch-link li a{

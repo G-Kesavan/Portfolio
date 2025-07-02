@@ -18,7 +18,7 @@
     width: auto;
     border-radius: var(--radius-xl);
     background-color: var(--navbar-color);
-    backdrop-filter: var(--backdrop-blur-heavy);
+    backdrop-filter: var(--backdrop-blur-nav);
     box-shadow: var(--nav-box-shadow);
     padding: 10px 3px 10px 3px;
     overflow: hidden;
@@ -33,6 +33,12 @@
     border-radius: 20px;
     cursor:pointer;
  }
+
+.sidebar ul li a:hover{
+    color: black;
+    font-weight: 600;
+}
+
 .sidebar ul li a{
     text-decoration: none;
     display: flex;
@@ -44,7 +50,7 @@
     width: var(--width-full);
     padding: 8px 0px 8px 0px;
     list-style: none;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @keyframes sideMenu {

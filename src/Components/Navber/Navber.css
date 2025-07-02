@@ -8,12 +8,13 @@
     justify-content: center;
     border-radius: var(--radius-xl);
     background-color: var(--navbar-color);
-    backdrop-filter: var(--backdrop-blur-heavy);
     box-shadow: var(--nav-box-shadow);
     bottom:0%;   
     transform: translateY(65%) translateX(10%);
     overflow: hidden;
     animation: navMenu 0.3s ease-in-out;
+    backdrop-filter: var(--backdrop-blur-nav);
+    z-index: 5;
 }
 
 .navbar ul {
@@ -35,13 +36,20 @@
     align-items: center;
     justify-content: center;
     font-size: var(--font-size-small);
-    font-weight: 300;
+    font-weight: 400;
+    color: var(--font-heading-color);
+}
+
+.navbar ul li a:hover{
+    color: black;
+    font-weight: 600;
 }
 
 .navbar ul li:hover{
     background-color: rgb(107, 114, 114);
     border-radius: 20px;
     cursor:pointer;
+    color: black;
 }
 
 @media (max-width: 824px) {

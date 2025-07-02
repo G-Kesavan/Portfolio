@@ -1,55 +1,33 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { RoundedBox, Stars } from "@react-three/drei";
-import { Suspense, useRef, useState, useEffect } from "react";
+import { RoundedBox, Stars, Environment } from "@react-three/drei";
+import { Suspense, useRef } from "react";
 import * as THREE from "three";
 
-function BigCubeWithMoon({ position, size = 5 }) {
+function BigCube({ position, size = 15 }) {
   const ref = useRef();
-  const moonRef = useRef();
 
-  useFrame(({ clock }) => {
-    // rotate big cube slowly
+  useFrame(() => {
     ref.current.rotation.x += 0.002;
     ref.current.rotation.y += 0.002;
-
-    // gentle floating movement
-    ref.current.position.x = position[0] + Math.sin(clock.elapsedTime * 0.1) * 2;
-    ref.current.position.y = position[1] + Math.cos(clock.elapsedTime * 0.1) * 2;
-
-    // orbiting moon around big cube with slower speed
-    const moonRadius = size * 1.5;
-    const moonSpeed = clock.elapsedTime * 0.2; // slowed orbit
-    moonRef.current.position.x =
-      ref.current.position.x + Math.cos(moonSpeed) * moonRadius;
-    moonRef.current.position.y =
-      ref.current.position.y + Math.sin(moonSpeed) * moonRadius;
-    moonRef.current.position.z = ref.current.position.z;
   });
 
   return (
-    <>
-      <RoundedBox
-        ref={ref}
-        args={[size, size, size]}
-        radius={0.5}
-        smoothness={6}
-      >
-        <meshStandardMaterial metalness={0.9} roughness={0.2} color="silver" />
-      </RoundedBox>
-      <mesh ref={moonRef}>
-        <sphereGeometry args={[size * 0.4, 16, 16]} />
-        <meshStandardMaterial metalness={0.9} roughness={0.2} color="silver" />
-      </mesh>
-    </>
+    <RoundedBox
+      ref={ref}
+      args={[size, size, size]}
+      radius={2}
+      smoothness={6}
+      position={position}
+    >
+      <meshStandardMaterial metalness={1} roughness={0.05} color="silver" />
+    </RoundedBox>
   );
 }
 
-function TriangleShape({ position, size = 3 }) {
+function TriangleShape({ position, size = 24 }) { // increased by 20%
   const ref = useRef();
-  useFrame(({ clock }) => {
+  useFrame(() => {
     ref.current.rotation.z += 0.002;
-    ref.current.position.x = position[0] + Math.sin(clock.elapsedTime * 0.1) * 1;
-    ref.current.position.y = position[1] + Math.cos(clock.elapsedTime * 0.1) * 1;
   });
 
   const shape = new THREE.Shape();
@@ -58,55 +36,15 @@ function TriangleShape({ position, size = 3 }) {
   shape.lineTo(size, -size);
   shape.lineTo(0, size);
 
-  const geometry = new THREE.ExtrudeGeometry(shape, { depth: 0.5 });
+  const geometry = new THREE.ExtrudeGeometry(shape, { depth: 2 });
   return (
     <mesh geometry={geometry} ref={ref} position={position}>
-      <meshStandardMaterial metalness={0.9} roughness={0.2} color="silver" />
+      <meshStandardMaterial metalness={1} roughness={0.05} color="silver" />
     </mesh>
   );
 }
 
 export default function Background3D() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const bigCubePositions = isMobile
-    ? [
-        [-6, 6, 0],
-        [6, 6, 0],
-        [-6, -6, 0],
-        [6, -6, 0],
-        [0, 0, -5],
-      ]
-    : [
-        [-12, 10, 0],
-        [12, 10, 0],
-        [-12, -10, 0],
-        [12, -10, 0],
-        [0, 0, -5],
-      ];
-
-  const trianglePositions = isMobile
-    ? [
-        [-6, 8, 0],
-        [6, 8, 0],
-        [-6, -8, 0],
-        [6, -8, 0],
-        [0, 10, 0],
-      ]
-    : [
-        [-15, 12, 0],
-        [15, 12, 0],
-        [-15, -12, 0],
-        [15, -12, 0],
-        [0, 14, 0],
-      ];
-
   return (
     <div
       style={{
@@ -116,22 +54,21 @@ export default function Background3D() {
         background: "black",
       }}
     >
-      <Canvas camera={{ position: [20, 10, 30], fov: 45 }}>
+      <Canvas camera={{ position: [40, 20, 60], fov: 45 }}>
         <ambientLight intensity={0.5} />
-        <directionalLight position={[5, 10, 5]} intensity={1} />
+        <directionalLight position={[5, 10, 5]} intensity={2} />
+        <Environment preset="studio" />
         <Suspense fallback={null}>
-          {/* big cubes with orbiting moons */}
-          {bigCubePositions.map((pos, i) => (
-            <BigCubeWithMoon key={`bigcube-${i}`} position={pos} size={5} />
-          ))}
+          {/* top left pair */}
+          <BigCube position={[-80, 0, -3]} size={40} />
+          <TriangleShape position={[-80, 20, 0]} size={52} />
 
-          {/* big triangle shapes moving gently */}
-          {trianglePositions.map((pos, i) => (
-            <TriangleShape key={`triangle-${i}`} position={pos} size={4} />
-          ))}
+          {/* bottom right pair */}
+          <BigCube position={[30, 5, 5]} size={20} />
+          <TriangleShape position={[40, -8, 1]} size={20} />
 
           {/* star background */}
-          <Stars radius={100} depth={50} count={3000} factor={4} fade speed={1} />
+          <Stars radius={150} depth={40} count={10000} factor={4} fade speed={1} />
         </Suspense>
       </Canvas>
     </div>
