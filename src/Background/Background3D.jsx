@@ -24,7 +24,7 @@ function BigCube({ position, size = 15 }) {
   );
 }
 
-function TriangleShape({ position, size = 24 }) { // increased by 20%
+function TriangleShape({ position, size = 24 }) { 
   const ref = useRef();
   useFrame(() => {
     ref.current.rotation.z += 0.002;
@@ -62,6 +62,10 @@ export default function Background3D() {
           {/* top left pair */}
           <BigCube position={[-80, 0, -3]} size={40} />
           <TriangleShape position={[-80, 20, 0]} size={52} />
+          
+          {/* center pair */}
+          <TriangleShape position={[30, 17, 47]} size={3} />
+          <BigCube position={[30, 14, 45]} size={6.5} />
 
           {/* bottom right pair */}
           <BigCube position={[30, 5, 5]} size={20} />

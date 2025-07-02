@@ -88,12 +88,14 @@ marquee {
     background-color: rgb(107, 114, 114);
     border-radius: 10px;
     cursor:pointer;
+    color: black;
 }
 
-.resume ul :nth-child(2):hover{
+.resume ul :nth-child(2):hover {
     background-color: rgb(107, 114, 114);
     border-radius: 10px;
     cursor:pointer;
+    color: black;
 }
 
 .resum-text{
