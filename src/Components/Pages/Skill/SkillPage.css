@@ -46,7 +46,7 @@
     text-align: center;
     font-size: var(--font-size-normal);
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y:auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
     border-radius: 20px ;

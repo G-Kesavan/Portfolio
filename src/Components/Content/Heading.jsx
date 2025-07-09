@@ -5,20 +5,20 @@ import { IoMdDownload  } from "react-icons/io";
 const Heading = () => {
 
   const DoButtonClick = () => {
-    const pdfUrl = "https://drive.google.com/uc?export=download&id=1HOjJ7i7-Hz_bMGF32cP99oqJDicO6ubb";
+    const pdfUrl = "https://drive.google.com/uc?export=download&id=1GfU8zsCSdwFkV8qmupo60dx44bBa-GfH";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "kESAVAN.PDF";
+    link.download = "kesavan_web_developer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 };
 
 const ViButtonClick = () => {
-  const pdfUrl = "https://drive.google.com/file/d/1HOjJ7i7-Hz_bMGF32cP99oqJDicO6ubb/view?usp=drive_link";
+  const pdfUrl = "https://drive.google.com/file/d/1GfU8zsCSdwFkV8qmupo60dx44bBa-GfH/view?usp=drivesdk";
   const link = document.createElement("a");
   link.href = pdfUrl;
-  link.download = "kESAVAN.PDF";
+  link.download = "kesavan_web_developer.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

@@ -77,8 +77,8 @@
     height: auto;
     position:fixed;
     z-index: 200;
-    bottom: 80px;
-    right: 1.5rem;;
+    bottom: 95px;
+    right: 1rem;;
     justify-content: flex-end;
     padding-right: unset;
     border-radius: var(--radius-xl);

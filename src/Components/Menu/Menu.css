@@ -4,20 +4,20 @@
 }
 .showMenu{
     display: flex;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     color: white;
     background-color: rgb(14, 13, 13);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    border: white 0.5px solid;
-
+    border: white 1px solid;
+    animation: border-increace infinite 1.5s linear;
 }
 .closeMenu{
     display: none;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     color: white;
     background-color: var(--background-dark);
     border-radius: 50%;
@@ -29,8 +29,23 @@
 @media (max-width: 524px), (max-height: 524px) {
     .menu{
         display: flex;
-        position: fixed;
-        bottom: 1.5rem;
-        right: 1.5rem;
+        bottom: 5rem;
+        right: 1rem;
+    
+    }
+}
+
+@keyframes border-increace {
+    0%{
+        transform: scale(1); 
+        border: rgb(4, 41, 252) 1px solid;
+    }
+    50%{
+        border: rgb(255, 251, 0) 6px solid;
+        transform: scale(1.25); 
+    }
+    100%{
+        border: rgb(255, 0, 0) 1px solid;
+        transform: scale(0.9); 
     }
 }

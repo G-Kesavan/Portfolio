@@ -12,13 +12,13 @@ import CertificatePage from '../Pages/Certificate/CertificatePage.jsx'
 import { Route,Routes} from 'react-router-dom'
 
 
-const Content = ({scrollTop}) => {
+const Content = ({scrollTop,setPageName}) => {
 
   return (
     <article className='Content'>
         <Heading/>
           <Routes >
-            <Route index element={<HomePage/>}/>
+            <Route index element={<HomePage setPageName={setPageName}/>} />
             <Route path='about' element={<AboutPage/>}/>
             <Route path='contact' element={<ContactPage/>}/>
             <Route path='biodata' element={<BiodataPage/>}/>

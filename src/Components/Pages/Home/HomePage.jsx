@@ -3,8 +3,9 @@ import './Home.css'
 import Photo from '/Images/MyPhotos/MyPhoto.png'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css'
+import { Link } from 'react-router-dom';
 
-const HomePage = () => {
+const HomePage = ({setPageName}) => {
   const percentageT = 90;
   const percentageE = 65;
 
@@ -22,12 +23,12 @@ const HomePage = () => {
         <p>My goal is to grow into a full-stack developer, contribute to impactful projects, and build intuitive digital experiences that solve real-world problems.</p>
       </div>
 
-      <div className='skills'>
-        <div className='skill'><p>Skills Count : 8+</p></div>
-        <div className='skill'><p>Project Count : 5</p></div>
-        <div className='skill'><p>Certifications : 6</p></div>
-        <div className='skill'><p>Problam solving : 0</p></div>
-      </div>
+      <ul className='skills'>
+        <li className='skill' onClick={()=>setPageName('skill')}><Link to='/skill'><p>Skills Count : 8+</p></Link></li>
+        <li className='skill' onClick={()=>setPageName('project')}><Link to='/project'><p>Project Count : 5</p></Link></li>
+        <li className='skill' onClick={()=>setPageName('certificate')}><Link to='/certificate'><p>Certifications : 6</p></Link></li>
+        <li className='skill'><p>Problam solving : 0</p></li>
+      </ul>
 
       <div className='language-box'>
         <div className='language'>

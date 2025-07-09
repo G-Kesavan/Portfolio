@@ -88,6 +88,11 @@
 .datials{
  gap: 1px;
 }
+.datials p {
+  -ms-overflow-style: unset;
+  scrollbar-width: unset;
+  overflow: hidden;
+}
 }
 
 @media (max-height: 524px) {

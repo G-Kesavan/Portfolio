@@ -52,6 +52,8 @@ export default function Background3D() {
         inset: 0,
         zIndex: -1,
         background: "black",
+        height:'100%',
+        width:'100%'
       }}
     >
       <Canvas camera={{ position: [40, 20, 60], fov: 45 }}>
